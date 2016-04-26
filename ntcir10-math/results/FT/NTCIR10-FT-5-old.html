@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="/sites/formulasearchengine.com/files/FSE-PIC.PNG" type="image/png" />
+<link rel="shortlink" href="/node/177" />
+<link rel="canonical" href="/ntcir10-math/results/FT/NTCIR10-FT-5-old" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<title>Radius of Convergence | Formulasearchengine</title>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_WQh4s2Yd3AZkoJ-2KGYZENmskdvBzcmhTkpVog99f3E.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_2Wfk5pCqGT8q0NyoUZP1fUQ65ZnhAfBrMog9FnkzVRo.css" media="all" />
+<style>body.snf-gwf-open-sans #site-name{font-family :'Open Sans'}
+body.ssf-gwf-open-sans #site-slogan{font-family:'Open Sans'}
+body.ptf-gwf-open-sans #page-title{font-family:'Open Sans'}
+body.ntf-gwf-open-sans .article-title{font-family:'Open Sans'}
+body.ctf-gwf-open-sans .comment-title{font-family:'Open Sans'}
+body.btf-gwf-open-sans .block-title{font-family:'Open Sans'}
+.flexible-slideshow,.flexible-slideshow .article-inner,.flexible-slideshow .article-content,.flexslider{max-width:940px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_KGZcOm3i1wmtbgZsjo-3V9FM4wZ-5UDcpJ7Vfzmt45E.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_smWejqFexB_rDFKKSWlAeBFeL0wXW7QAXc0ERqON49Y.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_9PqsK5c8l6O9eoDwm8W__UNdTYFwn8aMZ4GMFLgvgVw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_JDGN2tj7-5rvqMs9iPiy4ZeQPSffJTJiO7ZCBBh0-dU.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_BxuDEykWghfZVC4C4Lkw6QqG-soNPtesMdvs8oYCTYw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" media="all" />
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs.css" media="screen" />
+<![endif]-->
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_F5dDLDDznkN461Wcixy86a2AxU-sZUFzvmM3dKEfGMM.css" media="screen" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_yNGa1BdQKp2VqshF_KAN7MUZ4pGvnVgIT1gkuR4s1Ms.css" media="screen" />
+<![endif]-->
+
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs.css" media="screen" />
+<![endif]-->
+<script src="/sites/formulasearchengine.com/files/js/js_UWQINlriydSoeSiGQxToOUdv493zEa7dpsXC1OtYlZU.js"></script>
+<script src="/sites/formulasearchengine.com/files/js/js_wvSwZjuROhqJRov2lJssS494cnGtmn15BhEbCLMK1yo.js"></script>
+<script src="http://dygraphs.com/dygraph-combined.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"at_commerce","theme_token":"bOBgIcnpqBaTgu8enP60t3ZUJMPldG8Ghpfpw5UIW2Y","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/at-commerce\/js\/jquery.flexslider-min.js":1,"sites\/all\/themes\/at-commerce\/js\/slider.options.js":1,"sites\/all\/themes\/at-commerce\/js\/draw.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"http:\/\/dygraphs.com\/dygraph-combined.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/geshifilter\/geshifilter.css":1,"0":1,"1":1,"2":1,"3":1,"4":1,"5":1,"6":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/themes\/adaptivetheme\/at_core\/css\/at.layout.css":1,"sites\/all\/themes\/at-commerce\/css\/styles.base.css":1,"sites\/all\/themes\/at-commerce\/css\/styles.modules.css":1,"sites\/all\/themes\/at-commerce\/css\/styles.settings.css":1,"sites\/all\/themes\/at-commerce\/color\/colors.css":1,"sites\/all\/themes\/at-commerce\/css\/styles.slideshow.css":1,"sites\/all\/themes\/at-commerce\/css\/at_commerce.responsive.style.css":1,"sites\/all\/themes\/at-commerce\/css\/at_commerce.responsive.gpanels.css":1,"\/\/fonts.googleapis.com\/css?family=Open+Sans":1,"sites\/all\/themes\/at-commerce\/css\/ie-6.css":1,"sites\/all\/themes\/at-commerce\/css\/ie-lte-7.css":1,"sites\/all\/themes\/at-commerce\/css\/ie-8.css":1,"sites\/all\/themes\/at-commerce\/css\/ie-lte-9.css":1}},"urlIsAjaxTrusted":{"\/search\/node":true},"superfish":[{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"\u0027fast\u0027","autoArrows":false,"dropShadows":true,"disableHI":false},"plugins":{"smallscreen":{"mode":"window_width","addSelected":false,"menuClasses":false,"hyperlinkClasses":false,"title":"Main menu"},"supposition":false,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}},{"id":"2","sf":{"animation":{"opacity":"show"},"speed":"\u0027fast\u0027","autoArrows":false,"dropShadows":true,"disableHI":false},"plugins":{"smallscreen":{"mode":"window_width","addSelected":false,"menuClasses":false,"hyperlinkClasses":false,"title":"Administration"},"supposition":false,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}],"adaptivetheme":{"at_commerce":{"layout_settings":{"bigscreen":"three-col-grail","tablet_landscape":"three-col-grail","tablet_portrait":"one-col-vert"},"media_query_settings":{"bigscreen":"only screen and (min-width:1025px)","tablet_landscape":"only screen and (min-width:769px) and (max-width:1024px)","tablet_portrait":"only screen and (min-width:481px) and (max-width:768px)"}}}});</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-177 node-type-article atv-7.x-2.0-rc3 site-name-formulasearchengine section-ntcir10-math color-scheme-default at-commerce  fs-medium bb-n hl-l mb-dd mma-l ia-c snc-n snw-n sna-l sns-n ssc-n ssw-n ssa-l sss-n ptc-n ptw-n pta-l pts-n ntc-n ntw-n nta-l nts-n ctc-n ctw-n cta-l cts-n btc-uc btw-n bta-l bts-n itrc-0 isrc-6 bf-l snf-gwf-open-sans ssf-gwf-open-sans mmf-sss ptf-gwf-open-sans ntf-gwf-open-sans ctf-gwf-open-sans btf-gwf-open-sans hide-ss-nav">
+  <div id="skip-link" class="nocontent">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  
+  <div id="header-wrapper">
+    
+    <div class="container clearfix">
+      <header class="clearfix">
+
+        <div id="branding" class="clearfix with-logo with-site-name with-site-slogan">
+                      <div id="logo"><a href="/"><img class="site-logo" typeof="foaf:Image" src="/sites/formulasearchengine.com/files/FSE-Medium.png" alt="Formulasearchengine" /></a></div>
+          
+                      <hgroup>
+                              <h1 id="site-name"><a href="/" title="Home page">Formulasearchengine</a></h1>
+                                            <h2 id="site-slogan">Making math - the language of science - searchable</h2>
+                          </hgroup>
+                  </div>
+
+        
+                  <div id="nav-wrapper"><div id="menu-bar" class="nav clearfix"><nav id="block-superfish-1" class="block block-superfish menu-wrapper menu-bar-wrapper clearfix odd first last block-count-1 block-region-menu-bar block-1" >  
+      <h2 class="element-invisible block-title element-invisible">Main menu</h2>
+  
+  <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-8 sf-parent-items-2 sf-single-items-6"><li id="menu-230-1" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="/" class="sf-depth-1">Home</a></li><li id="menu-452-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/installation" class="sf-depth-1 menuparent">Installation</a><ul><li id="menu-445-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/installation/MediaWiki" class="sf-depth-2">MediaWiki</a></li><li id="menu-441-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/mwsd" title="How to install mwsd" class="sf-depth-2">MathWeb Search</a></li><li id="menu-440-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/lucene-install" title="How to install Lucene-search" class="sf-depth-2">Lucene</a></li><li id="menu-498-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="/LaTeXML" class="sf-depth-2">LaTeXML</a></li></ul></li><li id="menu-442-1" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="/node" title="" class="sf-depth-1">Article List</a></li><li id="menu-524-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="/Mathematical%20Language%20Processing" title="Mathematical Language Processing" class="sf-depth-1">MLP</a></li><li id="menu-706-1" class="middle odd sf-item-5 sf-depth-1 sf-no-children"><a href="/mathoid" class="sf-depth-1">Mathoid</a></li><li id="menu-623-1" class="middle even sf-item-6 sf-depth-1 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/ntcir10-math" class="sf-depth-1 menuparent">NTCIR10</a><ul><li id="menu-624-1" class="firstandlast odd sf-item-1 sf-depth-2 sf-no-children"><a href="/ntcir10-math/results/overview" title="Provides an Overview about the Results." class="sf-depth-2">Results</a></li></ul></li><li id="menu-705-1" class="middle odd sf-item-7 sf-depth-1 sf-no-children"><a href="/review" title="How to review the MediaWiki Math extension" class="sf-depth-1">REVIEW</a></li><li id="menu-704-1" class="last even sf-item-8 sf-depth-1 sf-no-children"><a href="/texvccheck" class="sf-depth-1">texvccheck</a></li></ul>
+  </nav></div></div>
+        
+      </header>
+    </div>
+  </div>
+
+  
+  <div id="content-wrapper" class="no-secondary"><div class="container">
+
+    
+    
+    
+    <div id="columns"><div class="columns-inner clearfix">
+      <div id="content-column"><div class="content-inner">
+
+        
+        
+                <section id="main-content">
+
+                              
+          
+          <div id="content"><div id="block-system-main" class="block block-system no-title odd first last block-count-2 block-region-content block-main" >  
+  
+  <article id="article-177" class="node node-article node-promoted article odd node-full clearfix" about="/ntcir10-math/results/FT/NTCIR10-FT-5-old" typeof="sioc:Item foaf:Document" role="article">
+  <div class="article-inner clearfix">
+
+    
+              <header class="clearfix">
+
+        
+                  <h1 class="node-title">
+                          Radius of Convergence                      </h1>
+        
+                  <div class="submitted"><span property="dc:date dc:created" content="2013-04-04T18:51:20+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">schubotz</span> on <time datetime="2013-04-04T18:51:20+0200" pubdate="pubdate">Thu, 04/04/2013 - 18:51</time></span></div>
+        
+      </header>
+        <span property="dc:title" content="Radius of Convergence" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+    <div class="node-content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-full view-mode-full"><div class="field-items"><div class="field-item even" property="content:encoded"><h1>Results for NTCIR10-FT-5</h1>
+<h2>Query</h2>
+<h3>Original Query</h3>
+<div style="height:200px;overflow:auto;" >
+<blockcode lang="xml" ><topic>
+<num>NTCIR10-FT-5</num>
+<type>Full Text Query</type>
+<title>Radius of Convergence</title>
+<query>
+<TeXquery>\sum\frac{n!x^{n}}{n^{n}}</TeXquery>
+<pquery>
+<m:math>
+<m:mrow xml:id="m7.1.3.pmml" xref="m7.1.3">
+<m:mo xml:id="m7.1.1.pmml" xref="m7.1.1">∑</m:mo>
+<m:mfrac xml:id="m7.1.2.pmml" xref="m7.1.2">
+<m:mrow xml:id="m7.1.2.2.pmml" xref="m7.1.2.2">
+<m:mrow xml:id="m7.1.2.2.6.pmml" xref="m7.1.2.2.6">
+<m:mi xml:id="m7.1.2.2.1.pmml" xref="m7.1.2.2.1">n</m:mi>
+<m:mi mathvariant="normal" xml:id="m7.1.2.2.2.pmml" xref="m7.1.2.2.2">!</m:mi>
+</m:mrow>
+<m:mo xml:id="m7.1.2.2.5.pmml" xref="m7.1.2.2.5">⁢</m:mo>
+<m:msup xml:id="m7.1.2.2.7.pmml" xref="m7.1.2.2.7">
+<m:mi xml:id="m7.1.2.2.3.pmml" xref="m7.1.2.2.3">x</m:mi>
+<m:mi xml:id="m7.1.2.2.4.1.pmml" xref="m7.1.2.2.4.1">n</m:mi>
+</m:msup>
+</m:mrow>
+<m:msup xml:id="m7.1.2.3.pmml" xref="m7.1.2.3">
+<m:mi xml:id="m7.1.2.3.1.pmml" xref="m7.1.2.3.1">n</m:mi>
+<m:mi xml:id="m7.1.2.3.2.1.pmml" xref="m7.1.2.3.2.1">n</m:mi>
+</m:msup>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</pquery>
+<cquery>
+<m:math>
+<m:apply xml:id="m7.1.3" xref="m7.1.3.pmml">
+<m:sum xml:id="m7.1.1" xref="m7.1.1.pmml"/>
+<m:apply xml:id="m7.1.2" xref="m7.1.2.pmml">
+<m:divide xml:id="m7.1.2.1"/>
+<m:apply xml:id="m7.1.2.2" xref="m7.1.2.2.pmml">
+<m:times xml:id="m7.1.2.2.5" xref="m7.1.2.2.5.pmml"/>
+<m:apply xml:id="m7.1.2.2.6" xref="m7.1.2.2.6.pmml">
+<m:factorial xml:id="m7.1.2.2.2" xref="m7.1.2.2.2.pmml"/>
+<m:ci xml:id="m7.1.2.2.1" xref="m7.1.2.2.1.pmml">n</m:ci>
+</m:apply>
+<m:apply xml:id="m7.1.2.2.7" xref="m7.1.2.2.7.pmml">
+<m:csymbol cd="ambiguous" xml:id="m7.1.2.2.7.1">superscript</m:csymbol>
+<m:ci xml:id="m7.1.2.2.3" xref="m7.1.2.2.3.pmml">x</m:ci>
+<m:ci xml:id="m7.1.2.2.4.1" xref="m7.1.2.2.4.1.pmml">n</m:ci>
+</m:apply>
+</m:apply>
+<m:apply xml:id="m7.1.2.3" xref="m7.1.2.3.pmml">
+<m:csymbol cd="ambiguous" xml:id="m7.1.2.3.3">superscript</m:csymbol>
+<m:ci xml:id="m7.1.2.3.1" xref="m7.1.2.3.1.pmml">n</m:ci>
+<m:ci xml:id="m7.1.2.3.2.1" xref="m7.1.2.3.2.1.pmml">n</m:ci>
+</m:apply>
+</m:apply>
+</m:apply>
+</m:math>
+</cquery>
+<words>radius of convergence</words>
+</query>
+<relevance>
+The open problem at
+could use a hint.
+</relevance>
+</topic>
+</blockcode></div>
+
+<h3>Compiled by FSE</h3>
+<h4>Token-Filter</h4>
+<ul><li>TeXFilter:<code>[!, n x 4, sum, \ x 2, ^ x 2, x, frac]</code></li><li>Presentation-MathML:<code>[!, ∑, n x 4, x]</code></li></ul>
+<h4>MathML-Filter</h4>
+<blockcode linenumbers="off" title="compressed Presentation-MathML regular expression">
+mrow[mo[∑];mfrac[mrow[mrow[mi[n];mi[!]];msup[mi[x];mi[n]]];msup[mi[n];mi[n]]]]</blockcode>
+<blockcode linenumbers="off" title="compressed Content-MathML regular expression">
+apply[sum;apply[divide;apply[times;apply[factorial;ci[n]];apply[csymbol[superscript];ci[x];ci[n]]];apply[csymbol[superscript];ci[n];ci[n]]]]</blockcode>
+<h4>Word filter</h4>
+ Keywords:[radius, of, convergence]
+
+ Rendered Presentation-MathML:
+<m:math><m:mrow xml:id="m7.1.3.pmml" xref="m7.1.3"><m:mo xml:id="m7.1.1.pmml" xref="m7.1.1">∑</m:mo><m:mfrac xml:id="m7.1.2.pmml" xref="m7.1.2"><m:mrow xml:id="m7.1.2.2.pmml" xref="m7.1.2.2"><m:mrow xml:id="m7.1.2.2.6.pmml" xref="m7.1.2.2.6"><m:mi xml:id="m7.1.2.2.1.pmml" xref="m7.1.2.2.1">n</m:mi><m:mi mathvariant="normal" xml:id="m7.1.2.2.2.pmml" xref="m7.1.2.2.2">!</m:mi></m:mrow><m:mo xml:id="m7.1.2.2.5.pmml" xref="m7.1.2.2.5">⁢</m:mo><m:msup xml:id="m7.1.2.2.7.pmml" xref="m7.1.2.2.7"><m:mi xml:id="m7.1.2.2.3.pmml" xref="m7.1.2.2.3">x</m:mi><m:mi xml:id="m7.1.2.2.4.1.pmml" xref="m7.1.2.2.4.1">n</m:mi></m:msup></m:mrow><m:msup xml:id="m7.1.2.3.pmml" xref="m7.1.2.3"><m:mi xml:id="m7.1.2.3.1.pmml" xref="m7.1.2.3.1">n</m:mi><m:mi xml:id="m7.1.2.3.2.1.pmml" xref="m7.1.2.3.2.1">n</m:mi></m:msup></m:mfrac></m:mrow></m:math>
+<h2>Results<h2>
+<h3>Summary<h3>
+<h4>Reviewer score 1</h4><ul>
+ <li>Items reviewd: 7</li>
+ <li>Accumulated score: 0</li>
+ <li>Formulasearchengine found: 0</li>
+</ul><h4>Reviewer score 0</h4><ul>
+ <li>Items reviewd: 9</li>
+ <li>Accumulated score: 575</li>
+ <li>Formulasearchengine found: 4</li>
+</ul>
+<h3>Short result list</h3>
+<div id="graph-info" style="height:20px;overflow:auto;"></div>
+		<div id="graph"></div>
+		<div id="graph-results"></div>
+		<script type="text/javascript">g = new Dygraph( document.getElementById("graph"),"fse,rating_cum,rating,score,id\n0,0\n0,0\n0,0\n0,0\n0,0\n0,1\n0,2\n0,3\n0,4\n0,5\n0,6\n0,7\n123,7\n246,7\n403,7\n575,7\n",{"score": {axis: {}},labelsKMB: true,xlabel: "Formulasearchengine score", ylabel: "Reviewer rating",title: "accumulated scores",drawPoints: true, strokeWidth: 0.0,highlightCallback: function(e, x, pts,row,seriesName) {
+                 document.getElementById("graph-info").innerHTML = hitinfo[x];
+              }, pointClickCallback: function(e, p) {
+              var strHtml="<h3>Results for selected point (x="+p.xval+")<h3>";
+			  document.getElementById("graph-results").innerHTML =strHtml;
+				for(var hit in hitids[p.xval]){
+					document.getElementById("graph-results").innerHTML +=
+					document.getElementById(hitids[p.xval][hit]).innerHTML;
+				}
+              },});
+			  var hitids=new Array();
+			  var hitinfo=new Array();
+			  hitids[0] = new Array("id125616","id62077","id69854","id79081","idp2450160","id139969","id191941","id56960","id59534","id66720","id66991","idp409984","id65924");
+hitids[123] = new Array("id81453");
+hitids[246] = new Array("id55050");
+hitids[403] = new Array("id105120");
+hitids[575] = new Array();
+
+hitinfo[0] ="id: id125616, reviewer rating: 0 score: 0,</br>id: id62077, reviewer rating: 0 score: 0,</br>id: id69854, reviewer rating: 0 score: 0,</br>id: id79081, reviewer rating: 0 score: 0,</br>id: idp2450160, reviewer rating: 0 score: 0,</br>id: id139969, reviewer rating: 1 score: 0,</br>id: id191941, reviewer rating: 1 score: 0,</br>id: id56960, reviewer rating: 1 score: 0,</br>id: id59534, reviewer rating: 1 score: 0,</br>id: id66720, reviewer rating: 1 score: 0,</br>id: id66991, reviewer rating: 1 score: 0,</br>id: idp409984, reviewer rating: 1 score: 0,</br>id: id65924, reviewer rating: 0 score: 123,</br>"
+hitinfo[123] ="id: id81453, reviewer rating: 0 score: 123,</br>"
+hitinfo[246] ="id: id55050, reviewer rating: 0 score: 157,</br>"
+hitinfo[403] ="id: id105120, reviewer rating: 0 score: 172,</br>"
+hitinfo[575] =""
+</script>
+<h3>Detailed results for reviewer score 4</h3>
+
+<h3>Detailed results for reviewer score 3</h3>
+
+<h3>Detailed results for reviewer score 2</h3>
+
+<h3>Detailed results for reviewer score 1</h3>
+<div id="id139969"><h4>Hit id139969</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/165/f065993.xhtml#id139969</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:1334854(000049%)
+	VariableMap:[g, !, n x 3, sum, infty, frac, 0, \ x 3, _, ^ x 2, = x 2, x]
+	Expects 4 occurences for 'n' but has only 3
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id139969" alttext="g=\sum _{{n=0}}^{\infty}\frac{n!}{x^{n}}" display="block"><m:semantics id="id139975"><m:mrow id="id139976"><m:mi id="id139977">g</m:mi><m:mo id="id139979">=</m:mo><m:mrow id="id139981"><m:mover id="id139982"><m:munder id="id139983"><m:mo id="id139984" movablelimits="false">∑</m:mo><m:mrow id="id139989"><m:mi id="id139990">n</m:mi><m:mo id="id139992" movablelimits="false">=</m:mo><m:mn id="id139997">0</m:mn></m:mrow></m:munder><m:mi id="id139999" mathvariant="normal">∞</m:mi></m:mover><m:mfrac id="id140004"><m:mrow id="id140005"><m:mi id="id140006">n</m:mi><m:mi id="id140008" mathvariant="normal">!</m:mi></m:mrow><m:msup id="id140012"><m:mi id="id140013">x</m:mi><m:mi id="id140015">n</m:mi></m:msup></m:mfrac></m:mrow></m:mrow><m:annotation-xml id="id140018" encoding="MathML-Content"><m:apply id="id140021"><m:eq id="id140022"/><m:ci id="id140023">g</m:ci><m:apply id="id140025"><m:apply id="id140026"><m:csymbol id="id140027" cd="ambiguous">superscript</m:csymbol><m:apply id="id140032"><m:csymbol id="id140033" cd="ambiguous">subscript</m:csymbol><m:sum id="id140038"/><m:apply id="id140039"><m:eq id="id140040"/><m:ci id="id140041">n</m:ci><m:cn id="id140043" type="integer">0</m:cn></m:apply></m:apply><m:infinity id="id140047"/></m:apply><m:apply id="id140048"><m:divide id="id140050"/><m:apply id="id140051"><m:factorial id="id140052"/><m:ci id="id140053">n</m:ci></m:apply><m:apply id="id140055"><m:csymbol id="id140056" cd="ambiguous">superscript</m:csymbol><m:ci id="id140061">x</m:ci><m:ci id="id140063">n</m:ci></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id140065" encoding="application/x-tex">g=\sum _{{n=0}}^{\infty}\frac{n!}{x^{n}}</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id191941"><h4>Hit id191941</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/210/f083798.xhtml#id191941</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $f(x)=\sum^{{\infty}}_{{n=0}}\frac{f^{{(n)}}(0)}{n!}x^{n}.$ at pos:2108254(84%)
+	Scoringfunction: ' + TeX_HIT_SCORE + NaN * WORD_SCORE[of]  + 1.5 * WORD_SCORE[ convergence]  + 1.5 * TOKEN_SCORE[!]  + 1.9375 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.875 * TOKEN_SCORE[\]  + 1.875 * TOKEN_SCORE[^]  + 1.75 * TOKEN_SCORE[x]  + 1.5 * TOKEN_SCORE[frac] 
+			=+100.0+NaN*0.0833397735003705+1.5*27.2286129675667+1.5*1.61179106085198+1.9375*0.06672875812593+1.5*0.450727438769192+1.875*5.92879328325965E-4+1.875*0.00338742677192689+1.75*0.053601160227971+1.5*0.0366287198730455 = NaN'
+	final score ~ 0
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id191941" alttext="f(x)=\sum^{{\infty}}_{{n=0}}\frac{f^{{(n)}}(0)}{n!}x^{n}." display="block"><m:semantics id="id191947"><m:mrow id="id191948"><m:mrow id="id191949"><m:mrow id="id191950"><m:mi id="id191951">f</m:mi><m:mo id="id191954">⁢</m:mo><m:mfenced id="id191956" open="(" close=")"><m:mi id="id191961">x</m:mi></m:mfenced></m:mrow><m:mo id="id191963">=</m:mo><m:mrow id="id191965"><m:munder id="id191966"><m:mover id="id191967"><m:mo id="id191968" movablelimits="false">∑</m:mo><m:mi id="id191973" mathvariant="normal">∞</m:mi></m:mover><m:mrow id="id191978"><m:mi id="id191979">n</m:mi><m:mo id="id191981">=</m:mo><m:mn id="id191983">0</m:mn></m:mrow></m:munder><m:mfrac id="id191985"><m:mrow id="id191986"><m:msup id="id191987"><m:mi id="id191988">f</m:mi><m:mfenced id="id191991" open="(" close=")"><m:mi id="id191996">n</m:mi></m:mfenced></m:msup><m:mo id="id191998">⁢</m:mo><m:mfenced id="id192000" open="(" close=")"><m:mn id="id192005">0</m:mn></m:mfenced></m:mrow><m:mrow id="id192007"><m:mi id="id192008">n</m:mi><m:mi id="id192011" mathvariant="normal">!</m:mi></m:mrow></m:mfrac><m:mo id="id192015">⁢</m:mo><m:msup id="id192017"><m:mi id="id192018">x</m:mi><m:mi id="id192021">n</m:mi></m:msup></m:mrow></m:mrow><m:mo id="id192023">.</m:mo></m:mrow><m:annotation-xml id="id192025" encoding="MathML-Content"><m:apply id="id192028"><m:eq id="id192029"/><m:apply id="id192030"><m:times id="id192031"/><m:ci id="id192032">f</m:ci><m:ci id="id192035">x</m:ci></m:apply><m:apply id="id192037"><m:apply id="id192038"><m:csymbol id="id192039" cd="ambiguous">subscript</m:csymbol><m:apply id="id192044"><m:csymbol id="id192045" cd="ambiguous">superscript</m:csymbol><m:sum id="id192049"/><m:infinity id="id192050"/></m:apply><m:apply id="id192051"><m:eq id="id192052"/><m:ci id="id192054">n</m:ci><m:cn id="id192056" type="integer">0</m:cn></m:apply></m:apply><m:apply id="id192060"><m:times id="id192061"/><m:apply id="id192062"><m:divide id="id192063"/><m:apply id="id192064"><m:times id="id192065"/><m:apply id="id192066"><m:csymbol id="id192068" cd="ambiguous">superscript</m:csymbol><m:ci id="id192072">f</m:ci><m:ci id="id192074">n</m:ci></m:apply><m:cn id="id192076" type="integer">0</m:cn></m:apply><m:apply id="id192081"><m:factorial id="id192082"/><m:ci id="id192083">n</m:ci></m:apply></m:apply><m:apply id="id192085"><m:csymbol id="id192086" cd="ambiguous">superscript</m:csymbol><m:ci id="id192091">x</m:ci><m:ci id="id192093">n</m:ci></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id192095" encoding="application/x-tex">f(x)=\sum^{{\infty}}_{{n=0}}\frac{f^{{(n)}}(0)}{n!}x^{n}.</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id56960"><h4>Hit id56960</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/33/f013125.xhtml#id56960</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:50617(000010%)
+	VariableMap:[!, n x 5, sum, ( x 2, ) x 2, infty, ,, - x 4, frac, 1 x 4, displaystyle, ;, \ x 5, _, ^ x 3, z, =]
+	Expects 1 occurences for 'x' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id56960" alttext="\displaystyle\sum _{{n=1}}^{{\infty}}\frac{(-n)^{{n-1}}}{(n-1)!}z^{{n-1}}\;," display="inline"><m:semantics id="id56966"><m:mrow id="id56967"><m:mrow id="id56968"><m:mover id="id56969"><m:munder id="id56970"><m:mo id="id56971" movablelimits="false">∑</m:mo><m:mrow id="id56976"><m:mi id="id56977">n</m:mi><m:mo id="id56979" movablelimits="false">=</m:mo><m:mn id="id56983">1</m:mn></m:mrow></m:munder><m:mi id="id56985" mathvariant="normal">∞</m:mi></m:mover><m:mstyle id="id56990" displaystyle="true"><m:mfrac id="id56993"><m:msup id="id56994"><m:mfenced id="id56996" open="(" close=")"><m:mrow id="id57001"><m:mo id="id57002">-</m:mo><m:mi id="id57004">n</m:mi></m:mrow></m:mfenced><m:mrow id="id57006"><m:mi id="id57007">n</m:mi><m:mo id="id57009">-</m:mo><m:mn id="id57011">1</m:mn></m:mrow></m:msup><m:mrow id="id57013"><m:mfenced id="id57014" open="(" close=")"><m:mrow id="id57020"><m:mi id="id57021">n</m:mi><m:mo id="id57023">-</m:mo><m:mn id="id57025">1</m:mn></m:mrow></m:mfenced><m:mi id="id57027" mathvariant="normal">!</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo id="id57031">⁢</m:mo><m:msup id="id57034"><m:mi id="id57035">z</m:mi><m:mrow id="id57037"><m:mi id="id57038">n</m:mi><m:mo id="id57040">-</m:mo><m:mn id="id57042">1</m:mn></m:mrow></m:msup></m:mrow><m:mo id="id57044">,</m:mo></m:mrow><m:annotation-xml id="id57047" encoding="MathML-Content"><m:apply id="id57050"><m:apply id="id57051"><m:csymbol id="id57052" cd="ambiguous">superscript</m:csymbol><m:apply id="id57057"><m:csymbol id="id57058" cd="ambiguous">subscript</m:csymbol><m:sum id="id57062"/><m:apply id="id57064"><m:eq id="id57065"/><m:ci id="id57066">n</m:ci><m:cn id="id57068" type="integer">1</m:cn></m:apply></m:apply><m:infinity id="id57072"/></m:apply><m:apply id="id57073"><m:times id="id57074"/><m:apply id="id57075"><m:divide id="id57076"/><m:apply id="id57078"><m:csymbol id="id57079" cd="ambiguous">superscript</m:csymbol><m:apply id="id57083"><m:minus id="id57084"/><m:ci id="id57085">n</m:ci></m:apply><m:apply id="id57088"><m:minus id="id57089"/><m:ci id="id57090">n</m:ci><m:cn id="id57092" type="integer">1</m:cn></m:apply></m:apply><m:apply id="id57096"><m:factorial id="id57097"/><m:apply id="id57098"><m:minus id="id57099"/><m:ci id="id57100">n</m:ci><m:cn id="id57103" type="integer">1</m:cn></m:apply></m:apply></m:apply><m:apply id="id57107"><m:csymbol id="id57108" cd="ambiguous">superscript</m:csymbol><m:ci id="id57113">z</m:ci><m:apply id="id57115"><m:minus id="id57116"/><m:ci id="id57117">n</m:ci><m:cn id="id57119" type="integer">1</m:cn></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id57124" encoding="application/x-tex">\displaystyle\sum _{{n=1}}^{{\infty}}\frac{(-n)^{{n-1}}}{(n-1)!}z^{{n-1}}\;,</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id59534"><h4>Hit id59534</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/223/f089170.xhtml#id59534</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:95783(000009%)
+	VariableMap:[!, e, n x 3, sum, ., infty, frac, 0, \ x 3, _, ^ x 3, = x 2, x x 2]
+	Expects 4 occurences for 'n' but has only 3
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id59534" alttext="e^{x}=\sum _{{n=0}}^{{\infty}}\frac{x^{n}}{n!}." display="inline"><m:semantics id="id59539"><m:mrow id="id59540"><m:mrow id="id59542"><m:msup id="id59543"><m:mi id="id59544">e</m:mi><m:mi id="id59546">x</m:mi></m:msup><m:mo id="id59548">=</m:mo><m:mrow id="id59550"><m:msubsup id="id59551"><m:mo id="id59552">∑</m:mo><m:mrow id="id59555"><m:mi id="id59556">n</m:mi><m:mo id="id59558">=</m:mo><m:mn id="id59560">0</m:mn></m:mrow><m:mi id="id59562" mathvariant="normal">∞</m:mi></m:msubsup><m:mfrac id="id59567"><m:msup id="id59568"><m:mi id="id59569">x</m:mi><m:mi id="id59571">n</m:mi></m:msup><m:mrow id="id59573"><m:mi id="id59574">n</m:mi><m:mi id="id59576" mathvariant="normal">!</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo id="id59581">.</m:mo></m:mrow><m:annotation-xml id="id59583" encoding="MathML-Content"><m:apply id="id59586"><m:eq id="id59587"/><m:apply id="id59588"><m:csymbol id="id59589" cd="ambiguous">superscript</m:csymbol><m:ci id="id59594">e</m:ci><m:ci id="id59596">x</m:ci></m:apply><m:apply id="id59598"><m:apply id="id59599"><m:csymbol id="id59600" cd="ambiguous">superscript</m:csymbol><m:apply id="id59605"><m:csymbol id="id59606" cd="ambiguous">subscript</m:csymbol><m:sum id="id59611"/><m:apply id="id59612"><m:eq id="id59613"/><m:ci id="id59614">n</m:ci><m:cn id="id59617" type="integer">0</m:cn></m:apply></m:apply><m:infinity id="id59621"/></m:apply><m:apply id="id59622"><m:divide id="id59623"/><m:apply id="id59624"><m:csymbol id="id59625" cd="ambiguous">superscript</m:csymbol><m:ci id="id59630">x</m:ci><m:ci id="id59632">n</m:ci></m:apply><m:apply id="id59634"><m:factorial id="id59635"/><m:ci id="id59636">n</m:ci></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id59638" encoding="application/x-tex">e^{x}=\sum _{{n=0}}^{{\infty}}\frac{x^{n}}{n!}.</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id66720"><h4>Hit id66720</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/33/f013125.xhtml#id66720</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:196478(000039%)
+	VariableMap:[!, a, n x 6, sum, (, ), infty, ,, - x 3, frac, 2, 1 x 2, displaystyle, ;, \ x 5, _, ^ x 4, z, =]
+	Expects 1 occurences for 'x' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id66720" alttext="\displaystyle\sum _{{n=1}}^{{\infty}}\frac{(-a)^{{n-1}}n^{{n-2}}}{n!}z^{n}\;," display="inline"><m:semantics id="id66726"><m:mrow id="id66727"><m:mrow id="id66728"><m:mover id="id66729"><m:munder id="id66730"><m:mo id="id66731" movablelimits="false">∑</m:mo><m:mrow id="id66736"><m:mi id="id66737">n</m:mi><m:mo id="id66739" movablelimits="false">=</m:mo><m:mn id="id66744">1</m:mn></m:mrow></m:munder><m:mi id="id66746" mathvariant="normal">∞</m:mi></m:mover><m:mstyle id="id66750" displaystyle="true"><m:mfrac id="id66754"><m:mrow id="id66755"><m:msup id="id66756"><m:mfenced id="id66757" open="(" close=")"><m:mrow id="id66762"><m:mo id="id66763">-</m:mo><m:mi id="id66765">a</m:mi></m:mrow></m:mfenced><m:mrow id="id66767"><m:mi id="id66768">n</m:mi><m:mo id="id66771">-</m:mo><m:mn id="id66773">1</m:mn></m:mrow></m:msup><m:mo id="id66775">⁢</m:mo><m:msup id="id66777"><m:mi id="id66778">n</m:mi><m:mrow id="id66780"><m:mi id="id66782">n</m:mi><m:mo id="id66784">-</m:mo><m:mn id="id66786">2</m:mn></m:mrow></m:msup></m:mrow><m:mrow id="id66788"><m:mi id="id66789">n</m:mi><m:mi id="id66791" mathvariant="normal">!</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo id="id66796">⁢</m:mo><m:msup id="id66798"><m:mi id="id66799">z</m:mi><m:mi id="id66801">n</m:mi></m:msup></m:mrow><m:mo id="id66803">,</m:mo></m:mrow><m:annotation-xml id="id66805" encoding="MathML-Content"><m:apply id="id66809"><m:apply id="id66810"><m:csymbol id="id66811" cd="ambiguous">superscript</m:csymbol><m:apply id="id66816"><m:csymbol id="id66817" cd="ambiguous">subscript</m:csymbol><m:sum id="id66821"/><m:apply id="id66822"><m:eq id="id66823"/><m:ci id="id66824">n</m:ci><m:cn id="id66827" type="integer">1</m:cn></m:apply></m:apply><m:infinity id="id66831"/></m:apply><m:apply id="id66832"><m:times id="id66833"/><m:apply id="id66834"><m:divide id="id66835"/><m:apply id="id66836"><m:times id="id66837"/><m:apply id="id66838"><m:csymbol id="id66840" cd="ambiguous">superscript</m:csymbol><m:apply id="id66844"><m:minus id="id66845"/><m:ci id="id66846">a</m:ci></m:apply><m:apply id="id66848"><m:minus id="id66850"/><m:ci id="id66851">n</m:ci><m:cn id="id66853" type="integer">1</m:cn></m:apply></m:apply><m:apply id="id66857"><m:csymbol id="id66858" cd="ambiguous">superscript</m:csymbol><m:ci id="id66863">n</m:ci><m:apply id="id66865"><m:minus id="id66866"/><m:ci id="id66867">n</m:ci><m:cn id="id66869" type="integer">2</m:cn></m:apply></m:apply></m:apply><m:apply id="id66874"><m:factorial id="id66875"/><m:ci id="id66876">n</m:ci></m:apply></m:apply><m:apply id="id66878"><m:csymbol id="id66879" cd="ambiguous">superscript</m:csymbol><m:ci id="id66884">z</m:ci><m:ci id="id66886">n</m:ci></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id66888" encoding="application/x-tex">\displaystyle\sum _{{n=1}}^{{\infty}}\frac{(-a)^{{n-1}}n^{{n-2}}}{n!}z^{n}\;,</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id66991"><h4>Hit id66991</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/33/f013125.xhtml#id66991</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:200662(000040%)
+	VariableMap:[!, a, n x 6, sum, (, ), ., infty, - x 3, frac, 1 x 3, displaystyle, ;, \ x 5, _, ^ x 4, z, =]
+	Expects 1 occurences for 'x' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id66991" alttext="\displaystyle\sum _{{n=1}}^{{\infty}}\frac{(-a)^{{n-1}}n^{{n-1}}}{n!}z^{n}\;." display="inline"><m:semantics id="id66997"><m:mrow id="id66998"><m:mrow id="id66999"><m:mover id="id67000"><m:munder id="id67001"><m:mo id="id67002" movablelimits="false">∑</m:mo><m:mrow id="id67007"><m:mi id="id67008">n</m:mi><m:mo id="id67010" movablelimits="false">=</m:mo><m:mn id="id67015">1</m:mn></m:mrow></m:munder><m:mi id="id67017" mathvariant="normal">∞</m:mi></m:mover><m:mstyle id="id67021" displaystyle="true"><m:mfrac id="id67025"><m:mrow id="id67026"><m:msup id="id67027"><m:mfenced id="id67028" open="(" close=")"><m:mrow id="id67033"><m:mo id="id67034">-</m:mo><m:mi id="id67036">a</m:mi></m:mrow></m:mfenced><m:mrow id="id67038"><m:mi id="id67039">n</m:mi><m:mo id="id67042">-</m:mo><m:mn id="id67044">1</m:mn></m:mrow></m:msup><m:mo id="id67046">⁢</m:mo><m:msup id="id67048"><m:mi id="id67049">n</m:mi><m:mrow id="id67051"><m:mi id="id67052">n</m:mi><m:mo id="id67055">-</m:mo><m:mn id="id67057">1</m:mn></m:mrow></m:msup></m:mrow><m:mrow id="id67059"><m:mi id="id67060">n</m:mi><m:mi id="id67062" mathvariant="normal">!</m:mi></m:mrow></m:mfrac></m:mstyle><m:mo id="id67066">⁢</m:mo><m:msup id="id67069"><m:mi id="id67070">z</m:mi><m:mi id="id67072">n</m:mi></m:msup></m:mrow><m:mo id="id67074">.</m:mo></m:mrow><m:annotation-xml id="id67076" encoding="MathML-Content"><m:apply id="id67080"><m:apply id="id67081"><m:csymbol id="id67082" cd="ambiguous">superscript</m:csymbol><m:apply id="id67086"><m:csymbol id="id67088" cd="ambiguous">subscript</m:csymbol><m:sum id="id67092"/><m:apply id="id67093"><m:eq id="id67094"/><m:ci id="id67095">n</m:ci><m:cn id="id67098" type="integer">1</m:cn></m:apply></m:apply><m:infinity id="id67102"/></m:apply><m:apply id="id67103"><m:times id="id67104"/><m:apply id="id67105"><m:divide id="id67106"/><m:apply id="id67107"><m:times id="id67108"/><m:apply id="id67109"><m:csymbol id="id67110" cd="ambiguous">superscript</m:csymbol><m:apply id="id67115"><m:minus id="id67116"/><m:ci id="id67117">a</m:ci></m:apply><m:apply id="id67119"><m:minus id="id67120"/><m:ci id="id67122">n</m:ci><m:cn id="id67124" type="integer">1</m:cn></m:apply></m:apply><m:apply id="id67128"><m:csymbol id="id67129" cd="ambiguous">superscript</m:csymbol><m:ci id="id67134">n</m:ci><m:apply id="id67136"><m:minus id="id67137"/><m:ci id="id67138">n</m:ci><m:cn id="id67140" type="integer">1</m:cn></m:apply></m:apply></m:apply><m:apply id="id67145"><m:factorial id="id67146"/><m:ci id="id67147">n</m:ci></m:apply></m:apply><m:apply id="id67149"><m:csymbol id="id67150" cd="ambiguous">superscript</m:csymbol><m:ci id="id67155">z</m:ci><m:ci id="id67157">n</m:ci></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id67159" encoding="application/x-tex">\displaystyle\sum _{{n=1}}^{{\infty}}\frac{(-a)^{{n-1}}n^{{n-1}}}{n!}z^{n}\;.</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="idp409984"><h4>Hit idp409984</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/19/f007378.xhtml#idp409984</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:45252(000004%)
+	VariableMap:[!, n x 5, sum, ( x 2, ) x 2, infty, frac, - x 2, W, 1 x 2, \ x 3, _, ^ x 3, z x 2, = x 2]
+	Expects 1 occurences for 'x' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="idp409984" alttext="W(z)=\sum _{{n=1}}^{\infty}(-n)^{{n-1}}\frac{z^{n}}{n!}" display="block"><semantics id="idp410768"><mrow id="idp410896"><mrow id="idp411024"><mi id="idp411152">W</mi><mo id="idp411408">⁢</mo><mrow id="idp411664"><mo id="idp411792">(</mo><mi id="idp412048">z</mi><mo id="idp412304">)</mo></mrow></mrow><mo id="idp412560">=</mo><mrow id="idp412816"><mover id="idp412944"><munder id="idp413072"><mo id="idp413200" movablelimits="false">∑</mo><mrow id="idp413728"><mi id="idp413856">n</mi><mo id="idp414112" movablelimits="false">=</mo><mn id="idp414640">1</mn></mrow></munder><mi id="idp414896" mathvariant="normal">∞</mi></mover><mrow id="idp415456"><msup id="idp415584"><mrow id="idp415712"><mo id="idp415840">(</mo><mrow id="idp416096"><mo id="idp416224">-</mo><mi id="idp416480">n</mi></mrow><mo id="idp416736">)</mo></mrow><mrow id="idp416992"><mi id="idp417120">n</mi><mo id="idp417376">-</mo><mn id="idp417632">1</mn></mrow></msup><mo id="idp417888">⁢</mo><mfrac id="idp418176"><msup id="idp418304"><mi id="idp418432">z</mi><mi id="idp418688">n</mi></msup><mrow id="idp418944"><mi id="idp419072">n</mi><mi id="idp419328" mathvariant="normal">!</mi></mrow></mfrac></mrow></mrow></mrow><annotation-xml id="idp419856" encoding="MathML-Content"><apply id="idp420256"><eq id="idp420384"/><apply id="idp420512"><times id="idp420640"/><ci id="idp420768">W</ci><ci id="idp421024">z</ci></apply><apply id="idp421280"><apply id="idp421408"><csymbol id="idp421536" cd="ambiguous">superscript</csymbol><apply id="idp422096"><csymbol id="idp422224" cd="ambiguous">subscript</csymbol><sum id="idp422832"/><apply id="idp422960"><eq id="idp423088"/><ci id="idp423216">n</ci><cn id="idp423472" type="integer">1</cn></apply></apply><infinity id="idp424000"/></apply><apply id="idp424128"><times id="idp424256"/><apply id="idp424384"><csymbol id="idp424512" cd="ambiguous">superscript</csymbol><apply id="idp425072"><minus id="idp425200"/><ci id="idp425328">n</ci></apply><apply id="idp425584"><minus id="idp425712"/><ci id="idp425840">n</ci><cn id="idp426096" type="integer">1</cn></apply></apply><apply id="idp426624"><divide id="idp426752"/><apply id="idp426880"><csymbol id="idp427008" cd="ambiguous">superscript</csymbol><ci id="idp427568">z</ci><ci id="idp427824">n</ci></apply><apply id="idp428080"><factorial id="idp428208"/><ci id="idp428336">n</ci></apply></apply></apply></apply></apply></annotation-xml><annotation id="idp428592" encoding="application/x-tex">W(z)=\sum _{{n=1}}^{\infty}(-n)^{{n-1}}\frac{z^{n}}{n!}</annotation></semantics></math>
+
+<br /> End of MathML <br />
+.</div>
+<h3>Detailed results for reviewer score 0</h3>
+<div id="id105120"><h4>Hit id105120</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 172</li>
+ <li>Reference to collection: _PREFIX_/8/f003138.xhtml#id105120</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $\varphi(x)=\sum _{{n=0}}^{{\infty}}\frac{x^{{n}}}{n!}\int\lambda^{{n}}\text{d}\mu(\lambda)=\int e^{{x\lambda}}\text{d}\mu(\lambda)$ at pos:786835(63%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 1.5 * WORD_SCORE[radius]  + 2.0 * WORD_SCORE[of]  + 1.9375 * WORD_SCORE[ convergence]  + 1.5 * TOKEN_SCORE[!]  + 1.9375 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.99993896484375 * TOKEN_SCORE[\]  + 1.9375 * TOKEN_SCORE[^]  + 1.875 * TOKEN_SCORE[x]  + 1.5 * TOKEN_SCORE[frac] 
+			=+100.0+1.5*10.9765492381723+2.0*0.0833397735003705+1.9375*27.2286129675667+1.5*1.61179106085198+1.9375*0.06672875812593+1.5*0.450727438769192+1.99993896484375*5.92879328325965E-4+1.9375*0.00338742677192689+1.875*0.053601160227971+1.5*0.0366287198730455 = 172.7731998642982'
+	final score ~ 172
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id105120" alttext="\varphi(x)=\sum _{{n=0}}^{{\infty}}\frac{x^{{n}}}{n!}\int\lambda^{{n}}\text{d}\mu(\lambda)=\int e^{{x\lambda}}\text{d}\mu(\lambda)" display="block"><m:semantics id="id105127"><m:mrow id="id105128"><m:mrow id="id105129"><m:mi id="id105130">φ</m:mi><m:mo id="id105133">⁢</m:mo><m:mfenced id="id105135" open="(" close=")"><m:mi id="id105140">x</m:mi></m:mfenced></m:mrow><m:mo id="id105142">=</m:mo><m:mrow id="id105144"><m:mover id="id105145"><m:munder id="id105146"><m:mo id="id105148" movablelimits="false">∑</m:mo><m:mrow id="id105152"><m:mi id="id105153">n</m:mi><m:mo id="id105155" movablelimits="false">=</m:mo><m:mn id="id105160">0</m:mn></m:mrow></m:munder><m:mi id="id105162" mathvariant="normal">∞</m:mi></m:mover><m:mfrac id="id105167"><m:msup id="id105168"><m:mi id="id105169">x</m:mi><m:mi id="id105171">n</m:mi></m:msup><m:mrow id="id105173"><m:mi id="id105174">n</m:mi><m:mi id="id105176" mathvariant="normal">!</m:mi></m:mrow></m:mfrac><m:mo id="id105181">⁢</m:mo><m:mrow id="id105183"><m:mo id="id105184">∫</m:mo><m:msup id="id105186"><m:mi id="id105188">λ</m:mi><m:mi id="id105190">n</m:mi></m:msup><m:mo id="id105192">⁢</m:mo><m:mtext id="id105194">d</m:mtext><m:mo id="id105197">⁢</m:mo><m:mi id="id105199">μ</m:mi><m:mo id="id105201">⁢</m:mo><m:mfenced id="id105204" open="(" close=")"><m:mi id="id105209">λ</m:mi></m:mfenced></m:mrow></m:mrow><m:mo id="id105211">=</m:mo><m:mrow id="id105213"><m:mo id="id105214">∫</m:mo><m:msup id="id105217"><m:mi id="id105218">e</m:mi><m:mrow id="id105220"><m:mi id="id105221">x</m:mi><m:mo id="id105223">⁢</m:mo><m:mi id="id105226">λ</m:mi></m:mrow></m:msup><m:mo id="id105228">⁢</m:mo><m:mtext id="id105230">d</m:mtext><m:mo id="id105233">⁢</m:mo><m:mi id="id105235">μ</m:mi><m:mo id="id105237">⁢</m:mo><m:mfenced id="id105240" open="(" close=")"><m:mi id="id105245">λ</m:mi></m:mfenced></m:mrow></m:mrow><m:annotation-xml id="id105247" encoding="MathML-Content"><m:apply id="id105251"><m:and id="id105252"/><m:apply id="id105253"><m:eq id="id105254"/><m:apply id="id105255"><m:times id="id105256"/><m:ci id="id105257">φ</m:ci><m:ci id="id105259">x</m:ci></m:apply><m:apply id="id105262" xml:id="S1.Ex25.m1.sh1.cmml"><m:apply id="id105266"><m:csymbol id="id105268" cd="ambiguous">superscript</m:csymbol><m:apply id="id105272"><m:csymbol id="id105273" cd="ambiguous">subscript</m:csymbol><m:sum id="id105278"/><m:apply id="id105279"><m:eq id="id105280"/><m:ci id="id105281">n</m:ci><m:cn id="id105283" type="integer">0</m:cn></m:apply></m:apply><m:infinity id="id105287"/></m:apply><m:apply id="id105288"><m:times id="id105290"/><m:apply id="id105291"><m:divide id="id105292"/><m:apply id="id105293"><m:csymbol id="id105294" cd="ambiguous">superscript</m:csymbol><m:ci id="id105298">x</m:ci><m:ci id="id105301">n</m:ci></m:apply><m:apply id="id105303"><m:factorial id="id105304"/><m:ci id="id105305">n</m:ci></m:apply></m:apply><m:apply id="id105307"><m:int id="id105308"/><m:apply id="id105309"><m:times id="id105310"/><m:apply id="id105311"><m:csymbol id="id105312" cd="ambiguous">superscript</m:csymbol><m:ci id="id105317">λ</m:ci><m:ci id="id105319">n</m:ci></m:apply><m:mtext id="id105322">d</m:mtext><m:ci id="id105324">μ</m:ci><m:ci id="id105326">λ</m:ci></m:apply></m:apply></m:apply></m:apply></m:apply><m:apply id="id105328"><m:eq id="id105330"/><m:share id="id105331" href="#S1.Ex25.m1.sh1.cmml"/><m:apply id="id105334" xml:id="S1.Ex25.m1.sh2.cmml"><m:int id="id105339"/><m:apply id="id105340"><m:times id="id105341"/><m:apply id="id105342"><m:csymbol id="id105343" cd="ambiguous">superscript</m:csymbol><m:ci id="id105348">e</m:ci><m:apply id="id105350"><m:times id="id105351"/><m:ci id="id105352">x</m:ci><m:ci id="id105354">λ</m:ci></m:apply></m:apply><m:mtext id="id105356">d</m:mtext><m:ci id="id105358">μ</m:ci><m:ci id="id105361">λ</m:ci></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id105363" encoding="application/x-tex">\varphi(x)=\sum _{{n=0}}^{{\infty}}\frac{x^{{n}}}{n!}\int\lambda^{{n}}\text{d}\mu(\lambda)=\int e^{{x\lambda}}\text{d}\mu(\lambda)</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id55050"><h4>Hit id55050</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 157</li>
+ <li>Reference to collection: _PREFIX_/137/f054645.xhtml#id55050</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $G(x,z){:=}\exp(x\Psi(z))f(z)=\sum _{{n=0}}^{\infty}\frac{P^{{(n)}}(x)}{n!}\, z^{n}$ at pos:24796(2%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 2.0 * WORD_SCORE[of]  + 1.99609375 * WORD_SCORE[ convergence]  + 1.5 * TOKEN_SCORE[!]  + 1.9375 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.984375 * TOKEN_SCORE[\]  + 1.875 * TOKEN_SCORE[^]  + 1.875 * TOKEN_SCORE[x]  + 1.5 * TOKEN_SCORE[frac] 
+			=+100.0+2.0*0.0833397735003705+1.99609375*27.2286129675667+1.5*1.61179106085198+1.9375*0.06672875812593+1.5*0.450727438769192+1.984375*5.92879328325965E-4+1.875*0.00338742677192689+1.875*0.053601160227971+1.5*0.0366287198730455 = 157.90358160638183'
+	final score ~ 157
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id55050" alttext="G(x,z){:=}\exp(x\Psi(z))f(z)=\sum _{{n=0}}^{\infty}\frac{P^{{(n)}}(x)}{n!}\, z^{n}" display="block"><m:semantics id="id55056"><m:mrow id="id55057"><m:mrow id="id55058"><m:mi id="id55059">G</m:mi><m:mo id="id55061">⁢</m:mo><m:mfenced id="id55064" open="(" close=")"><m:mrow id="id55069"><m:mi id="id55070">x</m:mi><m:mo id="id55072">,</m:mo><m:mi id="id55074">z</m:mi></m:mrow></m:mfenced></m:mrow><m:mo id="id55076">:=</m:mo><m:mrow id="id55078"><m:mrow id="id55080"><m:mi id="id55081">exp</m:mi><m:mo id="id55083">⁡</m:mo><m:mfenced id="id55085" open="(" close=")"><m:mrow id="id55090"><m:mi id="id55091">x</m:mi><m:mo id="id55093">⁢</m:mo><m:mi id="id55096" mathvariant="normal">Ψ</m:mi><m:mo id="id55100">⁢</m:mo><m:mfenced id="id55103" open="(" close=")"><m:mi id="id55108">z</m:mi></m:mfenced></m:mrow></m:mfenced></m:mrow><m:mo id="id55110">⁢</m:mo><m:mi id="id55112">f</m:mi><m:mo id="id55115">⁢</m:mo><m:mfenced id="id55117" open="(" close=")"><m:mi id="id55122">z</m:mi></m:mfenced></m:mrow><m:mo id="id55124">=</m:mo><m:mrow id="id55126"><m:mover id="id55128"><m:munder id="id55129"><m:mo id="id55130" movablelimits="false">∑</m:mo><m:mrow id="id55135"><m:mi id="id55136">n</m:mi><m:mo id="id55138" movablelimits="false">=</m:mo><m:mn id="id55142">0</m:mn></m:mrow></m:munder><m:mi id="id55144" mathvariant="normal">∞</m:mi></m:mover><m:mfrac id="id55149"><m:mrow id="id55150"><m:msup id="id55151"><m:mi id="id55152">P</m:mi><m:mfenced id="id55155" open="(" close=")"><m:mi id="id55160">n</m:mi></m:mfenced></m:msup><m:mo id="id55162">⁢</m:mo><m:mfenced id="id55164" open="(" close=")"><m:mi id="id55169">x</m:mi></m:mfenced></m:mrow><m:mrow id="id55172"><m:mi id="id55173">n</m:mi><m:mi id="id55175" mathvariant="normal">!</m:mi></m:mrow></m:mfrac><m:mo id="id55179">⁢</m:mo><m:msup id="id55182"><m:mi id="id55183">z</m:mi><m:mi id="id55185">n</m:mi></m:msup></m:mrow></m:mrow><m:annotation-xml id="id55187" encoding="MathML-Content"><m:apply id="id55190"><m:and id="id55191"/><m:apply id="id55192"><m:ci id="id55193">:=</m:ci><m:apply id="id55196"><m:times id="id55197"/><m:ci id="id55198">G</m:ci><m:apply id="id55200"><m:interval id="id55201" closure="open"/><m:ci id="id55204">x</m:ci><m:ci id="id55206">z</m:ci></m:apply></m:apply><m:apply id="id55208" xml:id="S1.E1.m1.sh1.cmml"><m:times id="id55317"/><m:apply id="id55318"><m:exp id="id55319"/><m:apply id="id55320"><m:times id="id55321"/><m:ci id="id55322">x</m:ci><m:ci id="id55324">Ψ</m:ci><m:ci id="id55326">z</m:ci></m:apply></m:apply><m:ci id="id55329">f</m:ci><m:ci id="id55331">z</m:ci></m:apply></m:apply><m:apply id="id55333"><m:eq id="id55334"/><m:share id="id55335" href="#S1.E1.m1.sh1.cmml"/><m:apply id="id55338" xml:id="S1.E1.m1.sh2.cmml"><m:apply id="id55343"><m:csymbol id="id55344" cd="ambiguous">superscript</m:csymbol><m:apply id="id55349"><m:csymbol id="id55350" cd="ambiguous">subscript</m:csymbol><m:sum id="id55355"/><m:apply id="id55356"><m:eq id="id55358"/><m:ci id="id55359">n</m:ci><m:cn id="id55362" type="integer">0</m:cn></m:apply></m:apply><m:infinity id="id55366"/></m:apply><m:apply id="id55367"><m:times id="id55368"/><m:apply id="id55369"><m:divide id="id55370"/><m:apply id="id55371"><m:times id="id55372"/><m:apply id="id55373"><m:csymbol id="id55374" cd="ambiguous">superscript</m:csymbol><m:ci id="id55382">P</m:ci><m:ci id="id55384">n</m:ci></m:apply><m:ci id="id55386">x</m:ci></m:apply><m:apply id="id55389"><m:factorial id="id55390"/><m:ci id="id55391">n</m:ci></m:apply></m:apply><m:apply id="id55393"><m:csymbol id="id55394" cd="ambiguous">superscript</m:csymbol><m:ci id="id55398">z</m:ci><m:ci id="id55400">n</m:ci></m:apply></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id55403" encoding="application/x-tex">G(x,z){:=}\exp(x\Psi(z))f(z)=\sum _{{n=0}}^{\infty}\frac{P^{{(n)}}(x)}{n!}\, z^{n}</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id65924"><h4>Hit id65924</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 123</li>
+ <li>Reference to collection: _PREFIX_/9/f003244.xhtml#id65924</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $N(x)=\sum _{{n=0}}^{{\infty}}\frac{x^{{n}}}{n!\;([f(n)]!)^{2}}\;,$ at pos:186925(25%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 1.75 * WORD_SCORE[radius]  + 2.0 * WORD_SCORE[of]  + 1.75 * TOKEN_SCORE[!]  + 1.9375 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.96875 * TOKEN_SCORE[\]  + 1.875 * TOKEN_SCORE[^]  + 1.75 * TOKEN_SCORE[x]  + 1.5 * TOKEN_SCORE[frac] 
+			=+100.0+1.75*10.9765492381723+2.0*0.0833397735003705+1.75*1.61179106085198+1.9375*0.06672875812593+1.5*0.450727438769192+1.96875*5.92879328325965E-4+1.875*0.00338742677192689+1.75*0.053601160227971+1.5*0.0366287198730455 = 123.15791696389954'
+	final score ~ 123
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id65924" alttext="N(x)=\sum _{{n=0}}^{{\infty}}\frac{x^{{n}}}{n!\;([f(n)]!)^{2}}\;," display="block"><m:semantics id="id65930"><m:mrow id="id65931"><m:mrow id="id65932"><m:mrow id="id65933"><m:mi id="id65934">N</m:mi><m:mo id="id65936">⁢</m:mo><m:mfenced id="id65939" open="(" close=")"><m:mi id="id65944">x</m:mi></m:mfenced></m:mrow><m:mo id="id65946">=</m:mo><m:mrow id="id65948"><m:mover id="id65949"><m:munder id="id65950"><m:mo id="id65951" movablelimits="false">∑</m:mo><m:mrow id="id65956"><m:mi id="id65957">n</m:mi><m:mo id="id65959" movablelimits="false">=</m:mo><m:mn id="id65964">0</m:mn></m:mrow></m:munder><m:mi id="id65966" mathvariant="normal">∞</m:mi></m:mover><m:mfrac id="id65970"><m:msup id="id65971"><m:mi id="id65972">x</m:mi><m:mi id="id65975">n</m:mi></m:msup><m:mrow id="id65977"><m:mrow id="id65978"><m:mi id="id65979">n</m:mi><m:mi id="id65981" mathvariant="normal">!</m:mi></m:mrow><m:mo id="id65985">⁢</m:mo><m:msup id="id65988"><m:mfenced id="id65989" open="(" close=")"><m:mrow id="id65994"><m:mfenced id="id65995" open="[" close="]"><m:mrow id="id66000"><m:mi id="id66001">f</m:mi><m:mo id="id66003">⁢</m:mo><m:mfenced id="id66006" open="(" close=")"><m:mi id="id66011">n</m:mi></m:mfenced></m:mrow></m:mfenced><m:mi id="id66013" mathvariant="normal">!</m:mi></m:mrow></m:mfenced><m:mn id="id66017">2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo id="id66019">,</m:mo></m:mrow><m:annotation-xml id="id66022" encoding="MathML-Content"><m:apply id="id66025"><m:eq id="id66026"/><m:apply id="id66027"><m:times id="id66028"/><m:ci id="id66029">N</m:ci><m:ci id="id66031">x</m:ci></m:apply><m:apply id="id66033"><m:apply id="id66034"><m:csymbol id="id66036" cd="ambiguous">superscript</m:csymbol><m:apply id="id66040"><m:csymbol id="id66041" cd="ambiguous">subscript</m:csymbol><m:sum id="id66046"/><m:apply id="id66047"><m:eq id="id66048"/><m:ci id="id66049">n</m:ci><m:cn id="id66051" type="integer">0</m:cn></m:apply></m:apply><m:infinity id="id66056"/></m:apply><m:apply id="id66057"><m:divide id="id66058"/><m:apply id="id66059"><m:csymbol id="id66060" cd="ambiguous">superscript</m:csymbol><m:ci id="id66065">x</m:ci><m:ci id="id66067">n</m:ci></m:apply><m:apply id="id66069"><m:times id="id66070"/><m:apply id="id66071"><m:factorial id="id66072"/><m:ci id="id66073">n</m:ci></m:apply><m:apply id="id66075"><m:csymbol id="id66076" cd="ambiguous">superscript</m:csymbol><m:apply id="id66081"><m:factorial id="id66082"/><m:apply id="id66083"><m:times id="id66084"/><m:ci id="id66085">f</m:ci><m:ci id="id66087">n</m:ci></m:apply></m:apply><m:cn id="id66090" type="integer">2</m:cn></m:apply></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id66094" encoding="application/x-tex">N(x)=\sum _{{n=0}}^{{\infty}}\frac{x^{{n}}}{n!\;([f(n)]!)^{2}}\;,</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id81453"><h4>Hit id81453</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 123</li>
+ <li>Reference to collection: _PREFIX_/72/f028800.xhtml#id81453</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $N(x)=\sum _{{n=0}}^{{\infty}}\frac{x^{{n}}}{n!\;([f(n)]!)^{2}}\;.$ at pos:412249(91%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 1.75 * WORD_SCORE[radius]  + 2.0 * WORD_SCORE[of]  + 1.75 * TOKEN_SCORE[!]  + 1.9375 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.96875 * TOKEN_SCORE[\]  + 1.875 * TOKEN_SCORE[^]  + 1.75 * TOKEN_SCORE[x]  + 1.5 * TOKEN_SCORE[frac] 
+			=+100.0+1.75*10.9765492381723+2.0*0.0833397735003705+1.75*1.61179106085198+1.9375*0.06672875812593+1.5*0.450727438769192+1.96875*5.92879328325965E-4+1.875*0.00338742677192689+1.75*0.053601160227971+1.5*0.0366287198730455 = 123.15791696389954'
+	final score ~ 123
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id81453" alttext="N(x)=\sum _{{n=0}}^{{\infty}}\frac{x^{{n}}}{n!\;([f(n)]!)^{2}}\;." display="block"><m:semantics id="id81459"><m:mrow id="id81460"><m:mrow id="id81461"><m:mrow id="id81462"><m:mi id="id81463">N</m:mi><m:mo id="id81465">⁢</m:mo><m:mfenced id="id81468" open="(" close=")"><m:mi id="id81473">x</m:mi></m:mfenced></m:mrow><m:mo id="id81475">=</m:mo><m:mrow id="id81477"><m:mover id="id81478"><m:munder id="id81479"><m:mo id="id81480" movablelimits="false">∑</m:mo><m:mrow id="id81485"><m:mi id="id81486">n</m:mi><m:mo id="id81488" movablelimits="false">=</m:mo><m:mn id="id81493">0</m:mn></m:mrow></m:munder><m:mi id="id81495" mathvariant="normal">∞</m:mi></m:mover><m:mfrac id="id81499"><m:msup id="id81500"><m:mi id="id81502">x</m:mi><m:mi id="id81504">n</m:mi></m:msup><m:mrow id="id81506"><m:mrow id="id81507"><m:mi id="id81508">n</m:mi><m:mi id="id81510" mathvariant="normal">!</m:mi></m:mrow><m:mo id="id81514">⁢</m:mo><m:msup id="id81517"><m:mfenced id="id81518" open="(" close=")"><m:mrow id="id81523"><m:mfenced id="id81524" open="[" close="]"><m:mrow id="id81529"><m:mi id="id81530">f</m:mi><m:mo id="id81532">⁢</m:mo><m:mfenced id="id81535" open="(" close=")"><m:mi id="id81540">n</m:mi></m:mfenced></m:mrow></m:mfenced><m:mi id="id81542" mathvariant="normal">!</m:mi></m:mrow></m:mfenced><m:mn id="id81546">2</m:mn></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo id="id81548">.</m:mo></m:mrow><m:annotation-xml id="id81551" encoding="MathML-Content"><m:apply id="id81554"><m:eq id="id81555"/><m:apply id="id81556"><m:times id="id81557"/><m:ci id="id81558">N</m:ci><m:ci id="id81560">x</m:ci></m:apply><m:apply id="id81562"><m:apply id="id81564"><m:csymbol id="id81565" cd="ambiguous">superscript</m:csymbol><m:apply id="id81569"><m:csymbol id="id81570" cd="ambiguous">subscript</m:csymbol><m:sum id="id81575"/><m:apply id="id81576"><m:eq id="id81577"/><m:ci id="id81578">n</m:ci><m:cn id="id81580" type="integer">0</m:cn></m:apply></m:apply><m:infinity id="id81585"/></m:apply><m:apply id="id81586"><m:divide id="id81587"/><m:apply id="id81588"><m:csymbol id="id81589" cd="ambiguous">superscript</m:csymbol><m:ci id="id81594">x</m:ci><m:ci id="id81596">n</m:ci></m:apply><m:apply id="id81598"><m:times id="id81599"/><m:apply id="id81600"><m:factorial id="id81601"/><m:ci id="id81602">n</m:ci></m:apply><m:apply id="id81604"><m:csymbol id="id81605" cd="ambiguous">superscript</m:csymbol><m:apply id="id81610"><m:factorial id="id81611"/><m:apply id="id81612"><m:times id="id81613"/><m:ci id="id81614">f</m:ci><m:ci id="id81616">n</m:ci></m:apply></m:apply><m:cn id="id81619" type="integer">2</m:cn></m:apply></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id81623" encoding="application/x-tex">N(x)=\sum _{{n=0}}^{{\infty}}\frac{x^{{n}}}{n!\;([f(n)]!)^{2}}\;.</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id125616"><h4>Hit id125616</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/184/f073229.xhtml#id125616</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:1090715(000071%)
+	VariableMap:[nu x 2, !, n x 4, + x 3, sum, ( x 2, ) x 2, Gamma x 2, J, , x 2, frac, 1 x 2, 0, displaystyle, geqslant, \ x 10, _, ^]
+	Expects 2 occurences for '^' but has only 1
+	Expects 1 occurences for 'x' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id125616" alttext="\displaystyle\Gamma(\nu+1)\sum _{{n\geqslant\, 0}}\frac{J^{n}}{n!\,\Gamma(n+\nu+1)}" display="inline"><m:semantics id="id125622"><m:mrow id="id125623"><m:mi id="id125624" mathvariant="normal">Γ</m:mi><m:mo id="id125628">⁢</m:mo><m:mfenced id="id125631" open="(" close=")"><m:mrow id="id125636"><m:mi id="id125637">ν</m:mi><m:mo id="id125639">+</m:mo><m:mn id="id125642">1</m:mn></m:mrow></m:mfenced><m:mo id="id125644">⁢</m:mo><m:mrow id="id125646"><m:munder id="id125647"><m:mo id="id125648" movablelimits="false">∑</m:mo><m:mrow id="id125653"><m:mi id="id125654">n</m:mi><m:mo id="id125656">⩾</m:mo><m:mn id="id125658"> 0</m:mn></m:mrow></m:munder><m:mstyle id="id125661" displaystyle="true"><m:mfrac id="id125664"><m:msup id="id125665"><m:mi id="id125666">J</m:mi><m:mi id="id125668">n</m:mi></m:msup><m:mrow id="id125671"><m:mrow id="id125672"><m:mi id="id125673">n</m:mi><m:mi id="id125675" mathvariant="normal">!</m:mi></m:mrow><m:mo id="id125679">⁢</m:mo><m:mi id="id125682" mathvariant="normal">Γ</m:mi><m:mo id="id125686">⁢</m:mo><m:mfenced id="id125689" open="(" close=")"><m:mrow id="id125694"><m:mi id="id125695">n</m:mi><m:mo id="id125697">+</m:mo><m:mi id="id125699">ν</m:mi><m:mo id="id125702">+</m:mo><m:mn id="id125704">1</m:mn></m:mrow></m:mfenced></m:mrow></m:mfrac></m:mstyle></m:mrow></m:mrow><m:annotation-xml id="id125706" encoding="MathML-Content"><m:apply id="id125709"><m:times id="id125710"/><m:ci id="id125711">Γ</m:ci><m:apply id="id125714"><m:plus id="id125715"/><m:ci id="id125716">ν</m:ci><m:cn id="id125718" type="integer">1</m:cn></m:apply><m:apply id="id125723"><m:apply id="id125724"><m:csymbol id="id125725" cd="ambiguous">subscript</m:csymbol><m:sum id="id125729"/><m:apply id="id125730"><m:geq id="id125732"/><m:ci id="id125733">n</m:ci><m:cn id="id125735" type="float"> 0</m:cn></m:apply></m:apply><m:apply id="id125739"><m:divide id="id125740"/><m:apply id="id125742"><m:csymbol id="id125743" cd="ambiguous">superscript</m:csymbol><m:ci id="id125747">J</m:ci><m:ci id="id125749">n</m:ci></m:apply><m:apply id="id125752"><m:times id="id125753"/><m:apply id="id125754"><m:factorial id="id125755"/><m:ci id="id125756">n</m:ci></m:apply><m:ci id="id125758">Γ</m:ci><m:apply id="id125760"><m:plus id="id125761"/><m:ci id="id125762">n</m:ci><m:ci id="id125765">ν</m:ci><m:cn id="id125767" type="integer">1</m:cn></m:apply></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id125771" encoding="application/x-tex">\displaystyle\Gamma(\nu+1)\sum _{{n\geqslant\, 0}}\frac{J^{n}}{n!\,\Gamma(n+\nu+1)}</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id62077"><h4>Hit id62077</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/180/f071706.xhtml#id62077</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:141513(000052%)
+	VariableMap:[3 x 2, 2 x 4, 1 x 2, ! x 3, ⁢ x 4, n x 10, x x 2, - x 2]
+	Expects 1 occurences for '∑' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id62077" display="inline"><m:semantics id="id62080"><m:mrow id="id62081"><m:msup id="id62082"><m:mfenced id="id62083" open="(" close=")"><m:mrow id="id62088"><m:mo id="id62089">-</m:mo><m:mn id="id62091">1</m:mn></m:mrow></m:mfenced><m:mi id="id62094">n</m:mi></m:msup><m:mo id="id62096">⁢</m:mo><m:mstyle id="id62098" displaystyle="true"><m:mfrac id="id62101"><m:mrow id="id62102"><m:mrow id="id62104"><m:mfenced id="id62105" open="(" close=")"><m:mrow id="id62110"><m:mrow id="id62111"><m:mn id="id62112">2</m:mn><m:mo id="id62114">⁢</m:mo><m:mi id="id62116">n</m:mi></m:mrow><m:mo id="id62118">-</m:mo><m:mn id="id62121">3</m:mn></m:mrow></m:mfenced><m:mi id="id62123" mathvariant="normal">!</m:mi></m:mrow><m:mi id="id62127" mathvariant="normal">!</m:mi></m:mrow><m:mrow id="id62132"><m:msup id="id62133"><m:mn id="id62134">2</m:mn><m:mi id="id62136">n</m:mi></m:msup><m:mo id="id62138">⁢</m:mo><m:mrow id="id62140"><m:mi id="id62141">n</m:mi><m:mi id="id62144" mathvariant="normal">!</m:mi></m:mrow></m:mrow></m:mfrac></m:mstyle><m:mo id="id62148">⁢</m:mo><m:msup id="id62150"><m:mi id="id62151">x</m:mi><m:mi id="id62154">n</m:mi></m:msup></m:mrow><m:annotation-xml id="id62156" encoding="MathML-Content"><m:apply id="id62159"><m:times id="id62160"/><m:apply id="id62161"><m:csymbol id="id62162" cd="ambiguous">superscript</m:csymbol><m:apply id="id62167"><m:minus id="id62168"/><m:cn id="id62169">1</m:cn></m:apply><m:ci id="id62171">n</m:ci></m:apply><m:apply id="id62173"><m:divide id="id62174"/><m:apply id="id62175"><m:factorial id="id62176"/><m:apply id="id62178"><m:factorial id="id62179"/><m:apply id="id62180"><m:minus id="id62181"/><m:apply id="id62182"><m:times id="id62183"/><m:cn id="id62184">2</m:cn><m:ci id="id62186">n</m:ci></m:apply><m:cn id="id62188">3</m:cn></m:apply></m:apply></m:apply><m:apply id="id62190"><m:times id="id62191"/><m:apply id="id62192"><m:csymbol id="id62194" cd="ambiguous">superscript</m:csymbol><m:cn id="id62198">2</m:cn><m:ci id="id62200">n</m:ci></m:apply><m:apply id="id62202"><m:factorial id="id62204"/><m:ci id="id62205">n</m:ci></m:apply></m:apply></m:apply><m:apply id="id62207"><m:csymbol id="id62208" cd="ambiguous">superscript</m:csymbol><m:ci id="id62212">x</m:ci><m:ci id="id62215">n</m:ci></m:apply></m:apply></m:annotation-xml></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id69854"><h4>Hit id69854</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/242/f096710.xhtml#id69854</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:256611(000037%)
+	VariableMap:[3 x 2, 2 x 4, 1 x 2, ! x 3, ⁢ x 4, n x 10, x x 2, - x 2]
+	Expects 1 occurences for '∑' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id69854" display="inline"><m:semantics id="id69858"><m:mrow id="id69859"><m:msup id="id69860"><m:mfenced id="id69861" open="(" close=")"><m:mrow id="id69866"><m:mo id="id69867">-</m:mo><m:mn id="id69869">1</m:mn></m:mrow></m:mfenced><m:mi id="id69871">n</m:mi></m:msup><m:mo id="id69873">⁢</m:mo><m:mstyle id="id69876" displaystyle="true"><m:mfrac id="id69879"><m:mrow id="id69880"><m:mrow id="id69881"><m:mfenced id="id69882" open="(" close=")"><m:mrow id="id69887"><m:mrow id="id69888"><m:mn id="id69890">2</m:mn><m:mo id="id69892">⁢</m:mo><m:mi id="id69894">n</m:mi></m:mrow><m:mo id="id69896">-</m:mo><m:mn id="id69898">3</m:mn></m:mrow></m:mfenced><m:mi id="id69900" mathvariant="normal">!</m:mi></m:mrow><m:mi id="id69905" mathvariant="normal">!</m:mi></m:mrow><m:mrow id="id69909"><m:msup id="id69910"><m:mn id="id69911">2</m:mn><m:mi id="id69914">n</m:mi></m:msup><m:mo id="id69916">⁢</m:mo><m:mrow id="id69918"><m:mi id="id69919">n</m:mi><m:mi id="id69921" mathvariant="normal">!</m:mi></m:mrow></m:mrow></m:mfrac></m:mstyle><m:mo id="id69926">⁢</m:mo><m:msup id="id69928"><m:mi id="id69929">x</m:mi><m:mi id="id69931">n</m:mi></m:msup></m:mrow><m:annotation-xml id="id69933" encoding="MathML-Content"><m:apply id="id69937"><m:times id="id69938"/><m:apply id="id69939"><m:csymbol id="id69940" cd="ambiguous">superscript</m:csymbol><m:apply id="id69945"><m:minus id="id69946"/><m:cn id="id69947">1</m:cn></m:apply><m:ci id="id69949">n</m:ci></m:apply><m:apply id="id69951"><m:divide id="id69952"/><m:apply id="id69953"><m:factorial id="id69954"/><m:apply id="id69955"><m:factorial id="id69956"/><m:apply id="id69957"><m:minus id="id69958"/><m:apply id="id69960"><m:times id="id69961"/><m:cn id="id69962">2</m:cn><m:ci id="id69964">n</m:ci></m:apply><m:cn id="id69966">3</m:cn></m:apply></m:apply></m:apply><m:apply id="id69968"><m:times id="id69969"/><m:apply id="id69970"><m:csymbol id="id69971" cd="ambiguous">superscript</m:csymbol><m:cn id="id69976">2</m:cn><m:ci id="id69978">n</m:ci></m:apply><m:apply id="id69980"><m:factorial id="id69981"/><m:ci id="id69982">n</m:ci></m:apply></m:apply></m:apply><m:apply id="id69984"><m:csymbol id="id69986" cd="ambiguous">superscript</m:csymbol><m:ci id="id69990">x</m:ci><m:ci id="id69992">n</m:ci></m:apply></m:apply></m:annotation-xml></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id79081"><h4>Hit id79081</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/180/f071701.xhtml#id79081</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:394101(000089%)
+	VariableMap:[2 x 8, ! x 2, 0 x 2, ⁢ x 5, λ x 2, n x 10, ., =, x x 2]
+	Expects 1 occurences for '∑' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id79081" display="block"><m:semantics id="id79084"><m:mrow id="id79085"><m:mrow id="id79086"><m:mfenced id="id79089" open="⟨" close="⟩"><m:msubsup id="id79095"><m:mi id="id79096">x</m:mi><m:mn id="id79098">0</m:mn><m:mrow id="id79100"><m:mn id="id79101">2</m:mn><m:mo id="id79104">⁢</m:mo><m:mi id="id79106">n</m:mi></m:mrow></m:msubsup></m:mfenced><m:mo id="id79108">=</m:mo><m:mfrac id="id79110"><m:mrow id="id79111"><m:mfenced id="id79112" open="(" close=")"><m:mrow id="id79116"><m:mn id="id79117">2</m:mn><m:mo id="id79119">⁢</m:mo><m:mi id="id79121">n</m:mi></m:mrow></m:mfenced><m:mi id="id79123" mathvariant="normal">!</m:mi></m:mrow><m:mrow id="id79128"><m:msup id="id79129"><m:mn id="id79130">2</m:mn><m:mrow id="id79132"><m:mn id="id79133">2</m:mn><m:mo id="id79135">⁢</m:mo><m:mi id="id79138">n</m:mi></m:mrow></m:msup><m:mo id="id79140">⁢</m:mo><m:msup id="id79142"><m:mi id="id79143">λ</m:mi><m:mi id="id79146">n</m:mi></m:msup><m:mo id="id79148">⁢</m:mo><m:mrow id="id79150"><m:mi id="id79151">n</m:mi><m:mi id="id79153" mathvariant="normal">!</m:mi></m:mrow></m:mrow></m:mfrac></m:mrow><m:mo id="id79158">.</m:mo></m:mrow><m:annotation-xml id="id79160" encoding="MathML-Content"><m:apply id="id79163"><m:eq id="id79164"/><m:apply id="id79165"><m:csymbol id="id79166" cd="ambiguous">superscript</m:csymbol><m:apply id="id79171"><m:csymbol id="id79172" cd="ambiguous">subscript</m:csymbol><m:ci id="id79177">x</m:ci><m:cn id="id79179">0</m:cn></m:apply><m:apply id="id79181"><m:times id="id79182"/><m:cn id="id79183">2</m:cn><m:ci id="id79185">n</m:ci></m:apply></m:apply><m:apply id="id79187"><m:divide id="id79188"/><m:apply id="id79190"><m:factorial id="id79191"/><m:apply id="id79192"><m:times id="id79193"/><m:cn id="id79194">2</m:cn><m:ci id="id79196">n</m:ci></m:apply></m:apply><m:apply id="id79198"><m:times id="id79199"/><m:apply id="id79200"><m:csymbol id="id79201" cd="ambiguous">superscript</m:csymbol><m:cn id="id79206">2</m:cn><m:apply id="id79208"><m:times id="id79209"/><m:cn id="id79210">2</m:cn><m:ci id="id79212">n</m:ci></m:apply></m:apply><m:apply id="id79214"><m:csymbol id="id79216" cd="ambiguous">superscript</m:csymbol><m:ci id="id79220">λ</m:ci><m:ci id="id79223">n</m:ci></m:apply><m:apply id="id79225"><m:factorial id="id79226"/><m:ci id="id79227">n</m:ci></m:apply></m:apply></m:apply></m:apply></m:annotation-xml></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="idp2450160"><h4>Hit idp2450160</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/18/f006841.xhtml#idp2450160</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:313116(000022%)
+	VariableMap:[! x 3, B x 6, n x 10, sum x 3, + x 2, ( x 7, ) x 7, - x 3, prime, 1 x 2, dfrac x 3, \ x 7, ^ x 4, = x 2, x x 5]
+	Expects 1 occurences for 'frac' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="idp2450160" alttext="\sum(B(n+1)-B(n))\dfrac{x^{n}}{n!}=\sum B(n+1)\dfrac{x^{n}}{n!}-\sum B(n)\dfrac{x^{n}}{n!}=B^{{\prime}}(x)-B(x)" display="inline"><semantics id="idp2451008"><mrow id="idp2451136"><mrow id="idp2451264"><mo id="idp2451392">∑</mo><mrow id="idp2451648"><mrow id="idp2451776"><mo id="idp2451904">(</mo><mrow id="idp2452160"><mrow id="idp2452288"><mi id="idp2452416">B</mi><mo id="idp2452672">⁢</mo><mrow id="idp2452928"><mo id="idp2453056">(</mo><mrow id="idp2453312"><mi id="idp2453440">n</mi><mo id="idp2453696">+</mo><mn id="idp2453952">1</mn></mrow><mo id="idp2454208">)</mo></mrow></mrow><mo id="idp2454464">-</mo><mrow id="idp2454720"><mi id="idp2454848">B</mi><mo id="idp2455104">⁢</mo><mrow id="idp2455392"><mo id="idp2455520">(</mo><mi id="idp2455776">n</mi><mo id="idp2456032">)</mo></mrow></mrow></mrow><mo id="idp2456288">)</mo></mrow><mo id="idp2456544">⁢</mo><mstyle id="idp2456832" displaystyle="true"><mfrac id="idp2457232"><msup id="idp2457360"><mi id="idp2457488">x</mi><mi id="idp2457744">n</mi></msup><mrow id="idp2458000"><mi id="idp2458128">n</mi><mi id="idp2458384" mathvariant="normal">!</mi></mrow></mfrac></mstyle></mrow></mrow><mo id="idp2458912">=</mo><mrow id="idp2459168"><mrow id="idp2459296"><mo id="idp2459424">∑</mo><mrow id="idp2459712"><mi id="idp2459840">B</mi><mo id="idp2460096">⁢</mo><mrow id="idp2460384"><mo id="idp2460512">(</mo><mrow id="idp2460768"><mi id="idp2460896">n</mi><mo id="idp2461152">+</mo><mn id="idp2461408">1</mn></mrow><mo id="idp2461664">)</mo></mrow><mo id="idp2461920">⁢</mo><mstyle id="idp2462208" displaystyle="true"><mfrac id="idp2462608"><msup id="idp2462736"><mi id="idp2462864">x</mi><mi id="idp2463120">n</mi></msup><mrow id="idp2463376"><mi id="idp2463504">n</mi><mi id="idp2463760" mathvariant="normal">!</mi></mrow></mfrac></mstyle></mrow></mrow><mo id="idp2464288">-</mo><mrow id="idp2464544"><mo id="idp2464672">∑</mo><mrow id="idp2464960"><mi id="idp2465088">B</mi><mo id="idp2465344">⁢</mo><mrow id="idp2465632"><mo id="idp2465760">(</mo><mi id="idp2466016">n</mi><mo id="idp2466272">)</mo></mrow><mo id="idp2466528">⁢</mo><mstyle id="idp2466816" displaystyle="true"><mfrac id="idp2467216"><msup id="idp2467344"><mi id="idp2467472">x</mi><mi id="idp2467728">n</mi></msup><mrow id="idp2467984"><mi id="idp2468112">n</mi><mi id="idp2468368" mathvariant="normal">!</mi></mrow></mfrac></mstyle></mrow></mrow></mrow><mo id="idp2468896">=</mo><mrow id="idp2469152"><mrow id="idp2469280"><msup id="idp2469408"><mi id="idp2469536">B</mi><mo id="idp2469792">′</mo></msup><mo id="idp2470080">⁢</mo><mrow id="idp2470368"><mo id="idp2470496">(</mo><mi id="idp2470752">x</mi><mo id="idp2471008">)</mo></mrow></mrow><mo id="idp2471264">-</mo><mrow id="idp2471520"><mi id="idp2471648">B</mi><mo id="idp2471904">⁢</mo><mrow id="idp2472192"><mo id="idp2472320">(</mo><mi id="idp2472576">x</mi><mo id="idp2472832">)</mo></mrow></mrow></mrow></mrow><annotation-xml id="idp2473088" encoding="MathML-Content"><apply id="idp2473488"><and id="idp2473616"/><apply id="idp2473744"><eq id="idp2473872"/><apply id="idp2474000"><sum id="idp2474128"/><apply id="idp2474256"><times id="idp2474384"/><apply id="idp2474512"><minus id="idp2474640"/><apply id="idp2474768"><times id="idp2474896"/><ci id="idp2475024">B</ci><apply id="idp2475280"><plus id="idp2475408"/><ci id="idp2475536">n</ci><cn id="idp2475792" type="integer">1</cn></apply></apply><apply id="idp2476320"><times id="idp2476448"/><ci id="idp2476576">B</ci><ci id="idp2476832">n</ci></apply></apply><apply id="idp2477088"><divide id="idp2477216"/><apply id="idp2477344"><csymbol id="idp2477472" cd="ambiguous">superscript</csymbol><ci id="idp2478032">x</ci><ci id="idp2478288">n</ci></apply><apply id="idp2478544"><factorial id="idp2478672"/><ci id="idp2478800">n</ci></apply></apply></apply></apply><apply id="S3.p10.m2.sh1ah.cmml"><minus id="S3.p10.m2.sh1.cmml"/><apply id="S3.p10.m2.sh1r.cmml"><sum id="S3.p10.m2.sh1a.cmml"/><apply id="S3.p10.m2.sh1q.cmml"><times id="S3.p10.m2.sh1b.cmml"/><ci id="S3.p10.m2.sh1c.cmml">B</ci><apply id="S3.p10.m2.sh1g.cmml"><plus id="S3.p10.m2.sh1d.cmml"/><ci id="S3.p10.m2.sh1e.cmml">n</ci><cn type="integer" id="S3.p10.m2.sh1f.cmml">1</cn></apply><apply id="S3.p10.m2.sh1p.cmml"><divide id="S3.p10.m2.sh1h.cmml"/><apply id="S3.p10.m2.sh1l.cmml"><csymbol cd="ambiguous" id="S3.p10.m2.sh1i.cmml">superscript</csymbol><ci id="S3.p10.m2.sh1j.cmml">x</ci><ci id="S3.p10.m2.sh1k.cmml">n</ci></apply><apply id="S3.p10.m2.sh1o.cmml"><factorial id="S3.p10.m2.sh1m.cmml"/><ci id="S3.p10.m2.sh1n.cmml">n</ci></apply></apply></apply></apply><apply id="S3.p10.m2.sh1ag.cmml"><sum id="S3.p10.m2.sh1s.cmml"/><apply id="S3.p10.m2.sh1af.cmml"><times id="S3.p10.m2.sh1t.cmml"/><ci id="S3.p10.m2.sh1u.cmml">B</ci><ci id="S3.p10.m2.sh1v.cmml">n</ci><apply id="S3.p10.m2.sh1ae.cmml"><divide id="S3.p10.m2.sh1w.cmml"/><apply id="S3.p10.m2.sh1aa.cmml"><csymbol cd="ambiguous" id="S3.p10.m2.sh1x.cmml">superscript</csymbol><ci id="S3.p10.m2.sh1y.cmml">x</ci><ci id="S3.p10.m2.sh1z.cmml">n</ci></apply><apply id="S3.p10.m2.sh1ad.cmml"><factorial id="S3.p10.m2.sh1ab.cmml"/><ci id="S3.p10.m2.sh1ac.cmml">n</ci></apply></apply></apply></apply></apply></apply><apply id="idp2495600"><eq id="idp2495728"/><share id="idp2495856" href="#S3.p10.m2.sh1.cmml"/><apply id="S3.p10.m2.sh2l.cmml"><minus id="S3.p10.m2.sh2.cmml"/><apply id="S3.p10.m2.sh2g.cmml"><times id="S3.p10.m2.sh2a.cmml"/><apply id="S3.p10.m2.sh2e.cmml"><csymbol cd="ambiguous" id="S3.p10.m2.sh2b.cmml">superscript</csymbol><ci id="S3.p10.m2.sh2c.cmml">B</ci><ci id="S3.p10.m2.sh2d.cmml">′</ci></apply><ci id="S3.p10.m2.sh2f.cmml">x</ci></apply><apply id="S3.p10.m2.sh2k.cmml"><times id="S3.p10.m2.sh2h.cmml"/><ci id="S3.p10.m2.sh2i.cmml">B</ci><ci id="S3.p10.m2.sh2j.cmml">x</ci></apply></apply></apply></apply></annotation-xml><annotation id="idp2502560" encoding="application/x-tex">\sum(B(n+1)-B(n))\dfrac{x^{n}}{n!}=\sum B(n+1)\dfrac{x^{n}}{n!}-\sum B(n)\dfrac{x^{n}}{n!}=B^{{\prime}}(x)-B(x)</annotation></semantics></math>
+
+<br /> End of MathML <br />
+.</div></div></div></div>    </div>
+
+          <nav class="clearfix"><ul class="links"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/177%23comment-form">Log in</a> to post comments</span></li></ul></nav>
+    
+    
+    
+  </div>
+</article>
+
+  </div></div>
+
+        </section>
+
+        
+      </div></div>
+
+            
+    </div></div>
+
+    
+  </div></div>
+
+  
+  <div id="page-footer">
+          <div id="footer-panels-wrapper"><div class="container clearfix">
+        <div class="four-4x25 gpanel clearfix">
+                                        <div class="region region-four-fourth"><div class="region-inner clearfix"><div id="block-block-1" class="block block-block no-title odd first last block-count-3 block-region-four-fourth block-1" ><div class="block-inner clearfix">  
+  
+  <div class="block-content content no-title"><p>By <a href="mailto:info@formulasearchengine.com">Moritz Schubotz</a>, Berlin 2012 (<a href="https://plus.google.com/u/0/104541687836095789339?&lt;br /&gt;&#10;   rel=author">g+</a>)</p>
+</div>
+  </div></div></div></div>        </div>
+      </div></div>
+    
+          <div id="footer-wrapper"><div class="container clearfix">
+        <footer class="clearfix">
+          <div class="region region-footer"><div class="region-inner clearfix"><nav id="block-superfish-2" class="block block-superfish no-title odd first last block-count-4 block-region-footer block-2" ><div class="block-inner clearfix">  
+  
+  <div class="block-content content clearfix no-title"><ul id="superfish-2" class="menu sf-menu sf-menu-administration sf-horizontal sf-style-none sf-total-items-1 sf-parent-items-0 sf-single-items-1"><li id="menu-450-2" class="firstandlast odd sf-item-1 sf-depth-1 sf-no-children"><a href="/Impressum" title="Legeal notices" class="sf-depth-1">Impressum</a></li></ul></div>
+  </div></nav></div></div>        </footer>
+     </div></div>
+      </div>
+
+</div></div>
+  </body>
+</html>

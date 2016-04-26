@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="/sites/formulasearchengine.com/files/FSE-PIC.PNG" type="image/png" />
+<link rel="shortlink" href="/node/178" />
+<link rel="canonical" href="/ntcir10-math/results/FT/NTCIR10-FT-6-old" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<title>Conditional Convergence | Formulasearchengine</title>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_WQh4s2Yd3AZkoJ-2KGYZENmskdvBzcmhTkpVog99f3E.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_2Wfk5pCqGT8q0NyoUZP1fUQ65ZnhAfBrMog9FnkzVRo.css" media="all" />
+<style>body.snf-gwf-open-sans #site-name{font-family :'Open Sans'}
+body.ssf-gwf-open-sans #site-slogan{font-family:'Open Sans'}
+body.ptf-gwf-open-sans #page-title{font-family:'Open Sans'}
+body.ntf-gwf-open-sans .article-title{font-family:'Open Sans'}
+body.ctf-gwf-open-sans .comment-title{font-family:'Open Sans'}
+body.btf-gwf-open-sans .block-title{font-family:'Open Sans'}
+.flexible-slideshow,.flexible-slideshow .article-inner,.flexible-slideshow .article-content,.flexslider{max-width:940px;}
+</style>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_KGZcOm3i1wmtbgZsjo-3V9FM4wZ-5UDcpJ7Vfzmt45E.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_smWejqFexB_rDFKKSWlAeBFeL0wXW7QAXc0ERqON49Y.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_9PqsK5c8l6O9eoDwm8W__UNdTYFwn8aMZ4GMFLgvgVw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_JDGN2tj7-5rvqMs9iPiy4ZeQPSffJTJiO7ZCBBh0-dU.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_BxuDEykWghfZVC4C4Lkw6QqG-soNPtesMdvs8oYCTYw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" media="all" />
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs.css" media="screen" />
+<![endif]-->
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_F5dDLDDznkN461Wcixy86a2AxU-sZUFzvmM3dKEfGMM.css" media="screen" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_yNGa1BdQKp2VqshF_KAN7MUZ4pGvnVgIT1gkuR4s1Ms.css" media="screen" />
+<![endif]-->
+
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/sites/formulasearchengine.com/files/css/css_AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs.css" media="screen" />
+<![endif]-->
+<script src="/sites/formulasearchengine.com/files/js/js_UWQINlriydSoeSiGQxToOUdv493zEa7dpsXC1OtYlZU.js"></script>
+<script src="/sites/formulasearchengine.com/files/js/js_wvSwZjuROhqJRov2lJssS494cnGtmn15BhEbCLMK1yo.js"></script>
+<script src="http://dygraphs.com/dygraph-combined.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"at_commerce","theme_token":"QY02itn9rFgxU-PMj2GDX_32ORHH3B4ntUjx6OaeY5c","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/at-commerce\/js\/jquery.flexslider-min.js":1,"sites\/all\/themes\/at-commerce\/js\/slider.options.js":1,"sites\/all\/themes\/at-commerce\/js\/draw.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1,"http:\/\/dygraphs.com\/dygraph-combined.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/geshifilter\/geshifilter.css":1,"0":1,"1":1,"2":1,"3":1,"4":1,"5":1,"6":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/themes\/adaptivetheme\/at_core\/css\/at.layout.css":1,"sites\/all\/themes\/at-commerce\/css\/styles.base.css":1,"sites\/all\/themes\/at-commerce\/css\/styles.modules.css":1,"sites\/all\/themes\/at-commerce\/css\/styles.settings.css":1,"sites\/all\/themes\/at-commerce\/color\/colors.css":1,"sites\/all\/themes\/at-commerce\/css\/styles.slideshow.css":1,"sites\/all\/themes\/at-commerce\/css\/at_commerce.responsive.style.css":1,"sites\/all\/themes\/at-commerce\/css\/at_commerce.responsive.gpanels.css":1,"\/\/fonts.googleapis.com\/css?family=Open+Sans":1,"sites\/all\/themes\/at-commerce\/css\/ie-6.css":1,"sites\/all\/themes\/at-commerce\/css\/ie-lte-7.css":1,"sites\/all\/themes\/at-commerce\/css\/ie-8.css":1,"sites\/all\/themes\/at-commerce\/css\/ie-lte-9.css":1}},"urlIsAjaxTrusted":{"\/search\/node":true},"superfish":[{"id":"1","sf":{"animation":{"opacity":"show"},"speed":"\u0027fast\u0027","autoArrows":false,"dropShadows":true,"disableHI":false},"plugins":{"smallscreen":{"mode":"window_width","addSelected":false,"menuClasses":false,"hyperlinkClasses":false,"title":"Main menu"},"supposition":false,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}},{"id":"2","sf":{"animation":{"opacity":"show"},"speed":"\u0027fast\u0027","autoArrows":false,"dropShadows":true,"disableHI":false},"plugins":{"smallscreen":{"mode":"window_width","addSelected":false,"menuClasses":false,"hyperlinkClasses":false,"title":"Administration"},"supposition":false,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}],"adaptivetheme":{"at_commerce":{"layout_settings":{"bigscreen":"three-col-grail","tablet_landscape":"three-col-grail","tablet_portrait":"one-col-vert"},"media_query_settings":{"bigscreen":"only screen and (min-width:1025px)","tablet_landscape":"only screen and (min-width:769px) and (max-width:1024px)","tablet_portrait":"only screen and (min-width:481px) and (max-width:768px)"}}}});</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-178 node-type-article atv-7.x-2.0-rc3 site-name-formulasearchengine section-ntcir10-math color-scheme-default at-commerce  fs-medium bb-n hl-l mb-dd mma-l ia-c snc-n snw-n sna-l sns-n ssc-n ssw-n ssa-l sss-n ptc-n ptw-n pta-l pts-n ntc-n ntw-n nta-l nts-n ctc-n ctw-n cta-l cts-n btc-uc btw-n bta-l bts-n itrc-0 isrc-6 bf-l snf-gwf-open-sans ssf-gwf-open-sans mmf-sss ptf-gwf-open-sans ntf-gwf-open-sans ctf-gwf-open-sans btf-gwf-open-sans hide-ss-nav">
+  <div id="skip-link" class="nocontent">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  
+  <div id="header-wrapper">
+    
+    <div class="container clearfix">
+      <header class="clearfix">
+
+        <div id="branding" class="clearfix with-logo with-site-name with-site-slogan">
+                      <div id="logo"><a href="/"><img class="site-logo" typeof="foaf:Image" src="/sites/formulasearchengine.com/files/FSE-Medium.png" alt="Formulasearchengine" /></a></div>
+          
+                      <hgroup>
+                              <h1 id="site-name"><a href="/" title="Home page">Formulasearchengine</a></h1>
+                                            <h2 id="site-slogan">Making math - the language of science - searchable</h2>
+                          </hgroup>
+                  </div>
+
+        
+                  <div id="nav-wrapper"><div id="menu-bar" class="nav clearfix"><nav id="block-superfish-1" class="block block-superfish menu-wrapper menu-bar-wrapper clearfix odd first last block-count-1 block-region-menu-bar block-1" >  
+      <h2 class="element-invisible block-title element-invisible">Main menu</h2>
+  
+  <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-8 sf-parent-items-2 sf-single-items-6"><li id="menu-230-1" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="/" class="sf-depth-1">Home</a></li><li id="menu-452-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent"><a href="/installation" class="sf-depth-1 menuparent">Installation</a><ul><li id="menu-445-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/installation/MediaWiki" class="sf-depth-2">MediaWiki</a></li><li id="menu-441-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/mwsd" title="How to install mwsd" class="sf-depth-2">MathWeb Search</a></li><li id="menu-440-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/lucene-install" title="How to install Lucene-search" class="sf-depth-2">Lucene</a></li><li id="menu-498-1" class="last even sf-item-4 sf-depth-2 sf-no-children"><a href="/LaTeXML" class="sf-depth-2">LaTeXML</a></li></ul></li><li id="menu-442-1" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="/node" title="" class="sf-depth-1">Article List</a></li><li id="menu-524-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="/Mathematical%20Language%20Processing" title="Mathematical Language Processing" class="sf-depth-1">MLP</a></li><li id="menu-706-1" class="middle odd sf-item-5 sf-depth-1 sf-no-children"><a href="/mathoid" class="sf-depth-1">Mathoid</a></li><li id="menu-623-1" class="middle even sf-item-6 sf-depth-1 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/ntcir10-math" class="sf-depth-1 menuparent">NTCIR10</a><ul><li id="menu-624-1" class="firstandlast odd sf-item-1 sf-depth-2 sf-no-children"><a href="/ntcir10-math/results/overview" title="Provides an Overview about the Results." class="sf-depth-2">Results</a></li></ul></li><li id="menu-705-1" class="middle odd sf-item-7 sf-depth-1 sf-no-children"><a href="/review" title="How to review the MediaWiki Math extension" class="sf-depth-1">REVIEW</a></li><li id="menu-704-1" class="last even sf-item-8 sf-depth-1 sf-no-children"><a href="/texvccheck" class="sf-depth-1">texvccheck</a></li></ul>
+  </nav></div></div>
+        
+      </header>
+    </div>
+  </div>
+
+  
+  <div id="content-wrapper" class="no-secondary"><div class="container">
+
+    
+    
+    
+    <div id="columns"><div class="columns-inner clearfix">
+      <div id="content-column"><div class="content-inner">
+
+        
+        
+                <section id="main-content">
+
+                              
+          
+          <div id="content"><div id="block-system-main" class="block block-system no-title odd first last block-count-2 block-region-content block-main" >  
+  
+  <article id="article-178" class="node node-article node-promoted article odd node-full clearfix" about="/ntcir10-math/results/FT/NTCIR10-FT-6-old" typeof="sioc:Item foaf:Document" role="article">
+  <div class="article-inner clearfix">
+
+    
+              <header class="clearfix">
+
+        
+                  <h1 class="node-title">
+                          Conditional Convergence                      </h1>
+        
+                  <div class="submitted"><span property="dc:date dc:created" content="2013-04-04T18:51:20+02:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">schubotz</span> on <time datetime="2013-04-04T18:51:20+0200" pubdate="pubdate">Thu, 04/04/2013 - 18:51</time></span></div>
+        
+      </header>
+        <span property="dc:title" content="Conditional Convergence" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+    <div class="node-content clearfix">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-full view-mode-full"><div class="field-items"><div class="field-item even" property="content:encoded"><h1>Results for NTCIR10-FT-6</h1>
+<h2>Query</h2>
+<h3>Original Query</h3>
+<div style="height:200px;overflow:auto;" >
+<blockcode lang="xml" ><topic>
+<num>NTCIR10-FT-6</num>
+<type>Full Text Query</type>
+<title>Conditional Convergence</title>
+<query>
+<TeXquery>\sum _{{n=1}}^{{\infty}}\frac{\sin(n)}{n}</TeXquery>
+<pquery>
+<m:math>
+<m:mrow xml:id="m8.1.5.pmml" xref="m8.1.5">
+<m:msubsup xml:id="m8.1.5.1.pmml" xref="m8.1.5.1">
+<m:mo xml:id="m8.1.1.pmml" xref="m8.1.1">∑</m:mo>
+<m:mrow xml:id="m8.1.2.1.pmml" xref="m8.1.2.1">
+<m:mi xml:id="m8.1.2.1.1.pmml" xref="m8.1.2.1.1">n</m:mi>
+<m:mo xml:id="m8.1.2.1.2.pmml" xref="m8.1.2.1.2">=</m:mo>
+<m:mn xml:id="m8.1.2.1.3.pmml" xref="m8.1.2.1.3">1</m:mn>
+</m:mrow>
+<m:mi mathvariant="normal" xml:id="m8.1.3.1.pmml" xref="m8.1.3.1">∞</m:mi>
+</m:msubsup>
+<m:mfrac xml:id="m8.1.4.pmml" xref="m8.1.4">
+<m:mrow xml:id="m8.1.4.2.pmml" xref="m8.1.4.2">
+<m:mi xml:id="m8.1.4.2.1.pmml" xref="m8.1.4.2.1">sin</m:mi>
+<m:mo xml:id="m8.1.4.2a.pmml" xref="m8.1.4.2">⁡</m:mo>
+<m:mrow xml:id="m8.1.4.2b.pmml" xref="m8.1.4.2">
+<m:mo xml:id="m8.1.4.2c.pmml" xref="m8.1.4.2">(</m:mo>
+<m:mi xml:id="m8.1.4.2.3.pmml" xref="m8.1.4.2.3">n</m:mi>
+<m:mo xml:id="m8.1.4.2d.pmml" xref="m8.1.4.2">)</m:mo>
+</m:mrow>
+</m:mrow>
+<m:mi xml:id="m8.1.4.3.pmml" xref="m8.1.4.3">n</m:mi>
+</m:mfrac>
+</m:mrow>
+</m:math>
+</pquery>
+<cquery>
+<m:math>
+<m:apply xml:id="m8.1.5" xref="m8.1.5.pmml">
+<m:apply xml:id="m8.1.5.1" xref="m8.1.5.1.pmml">
+<m:csymbol cd="ambiguous" xml:id="m8.1.5.1.1">superscript</m:csymbol>
+<m:apply xml:id="m8.1.5.1.2">
+<m:csymbol cd="ambiguous" xml:id="m8.1.5.1.2.1">subscript</m:csymbol>
+<m:sum xml:id="m8.1.1" xref="m8.1.1.pmml"/>
+<m:apply xml:id="m8.1.2.1" xref="m8.1.2.1.pmml">
+<m:eq xml:id="m8.1.2.1.2" xref="m8.1.2.1.2.pmml"/>
+<m:ci xml:id="m8.1.2.1.1" xref="m8.1.2.1.1.pmml">n</m:ci>
+<m:cn type="integer" xml:id="m8.1.2.1.3" xref="m8.1.2.1.3.pmml">1</m:cn>
+</m:apply>
+</m:apply>
+<m:infinity xml:id="m8.1.3.1" xref="m8.1.3.1.pmml"/>
+</m:apply>
+<m:apply xml:id="m8.1.4" xref="m8.1.4.pmml">
+<m:divide xml:id="m8.1.4.1"/>
+<m:apply xml:id="m8.1.4.2" xref="m8.1.4.2.pmml">
+<m:sin xml:id="m8.1.4.2.1" xref="m8.1.4.2.1.pmml"/>
+<m:ci xml:id="m8.1.4.2.3" xref="m8.1.4.2.3.pmml">n</m:ci>
+</m:apply>
+<m:ci xml:id="m8.1.4.3" xref="m8.1.4.3.pmml">n</m:ci>
+</m:apply>
+</m:apply>
+</m:math>
+</cquery>
+<words>infinite series conditionally convergent</words>
+</query>
+<relevance>
+The open problem at
+could use a hint.
+</relevance>
+</topic>
+</blockcode></div>
+
+<h3>Compiled by FSE</h3>
+<h4>Token-Filter</h4>
+<ul><li>TeXFilter:<code>[n x 3, sum, (, ), infty, frac, 1, sin, \ x 4, _, ^, =]</code></li><li>Presentation-MathML:<code>[1, sin, ∑, n x 3, ∞, =]</code></li></ul>
+<h4>MathML-Filter</h4>
+<blockcode linenumbers="off" title="compressed Presentation-MathML regular expression">
+mrow[msubsup[mo[∑];mrow[mi[n];mo[=];mn[1]];mi[∞]];mfrac[mrow[mi[sin];mfenced[mi[n]]];mi[n]]]</blockcode>
+<blockcode linenumbers="off" title="compressed Content-MathML regular expression">
+apply[apply[csymbol[superscript];apply[csymbol[subscript];sum;apply[eq;ci[n];cn[1]]];infinity];apply[divide;apply[sin;ci[n]];ci[n]]]</blockcode>
+<h4>Word filter</h4>
+ Keywords:[infinite, series, conditionally, convergent]
+
+ Rendered Presentation-MathML:
+<m:math><m:mrow xml:id="m8.1.5.pmml" xref="m8.1.5"><m:msubsup xml:id="m8.1.5.1.pmml" xref="m8.1.5.1"><m:mo xml:id="m8.1.1.pmml" xref="m8.1.1">∑</m:mo><m:mrow xml:id="m8.1.2.1.pmml" xref="m8.1.2.1"><m:mi xml:id="m8.1.2.1.1.pmml" xref="m8.1.2.1.1">n</m:mi><m:mo xml:id="m8.1.2.1.2.pmml" xref="m8.1.2.1.2">=</m:mo><m:mn xml:id="m8.1.2.1.3.pmml" xref="m8.1.2.1.3">1</m:mn></m:mrow><m:mi mathvariant="normal" xml:id="m8.1.3.1.pmml" xref="m8.1.3.1">∞</m:mi></m:msubsup><m:mfrac xml:id="m8.1.4.pmml" xref="m8.1.4"><m:mrow xml:id="m8.1.4.2.pmml" xref="m8.1.4.2"><m:mi xml:id="m8.1.4.2.1.pmml" xref="m8.1.4.2.1">sin</m:mi><m:mo xml:id="m8.1.4.2a.pmml" xref="m8.1.4.2">⁡</m:mo><m:mrow xml:id="m8.1.4.2b.pmml" xref="m8.1.4.2"><m:mo xml:id="m8.1.4.2c.pmml" xref="m8.1.4.2">(</m:mo><m:mi xml:id="m8.1.4.2.3.pmml" xref="m8.1.4.2.3">n</m:mi><m:mo xml:id="m8.1.4.2d.pmml" xref="m8.1.4.2">)</m:mo></m:mrow></m:mrow><m:mi xml:id="m8.1.4.3.pmml" xref="m8.1.4.3">n</m:mi></m:mfrac></m:mrow></m:math>
+<h2>Results<h2>
+<h3>Summary<h3>
+<h4>Reviewer score 1</h4><ul>
+ <li>Items reviewd: 7</li>
+ <li>Accumulated score: 2842</li>
+ <li>Formulasearchengine found: 4</li>
+</ul><h4>Reviewer score 0</h4><ul>
+ <li>Items reviewd: 6</li>
+ <li>Accumulated score: 1785</li>
+ <li>Formulasearchengine found: 4</li>
+</ul>
+<h3>Short result list</h3>
+<div id="graph-info" style="height:20px;overflow:auto;"></div>
+		<div id="graph"></div>
+		<div id="graph-results"></div>
+		<script type="text/javascript">g = new Dygraph( document.getElementById("graph"),"fse,rating_cum,rating,score,id\n0,0\n0,0\n0,1\n0,2\n0,3\n136,4\n303,5\n709,6\n1152,6\n1595,6\n2039,6\n2494,6\n4627,7\n",{"score": {axis: {}},labelsKMB: true,xlabel: "Formulasearchengine score", ylabel: "Reviewer rating",title: "accumulated scores",drawPoints: true, strokeWidth: 0.0,highlightCallback: function(e, x, pts,row,seriesName) {
+                 document.getElementById("graph-info").innerHTML = hitinfo[x];
+              }, pointClickCallback: function(e, p) {
+              var strHtml="<h3>Results for selected point (x="+p.xval+")<h3>";
+			  document.getElementById("graph-results").innerHTML =strHtml;
+				for(var hit in hitids[p.xval]){
+					document.getElementById("graph-results").innerHTML +=
+					document.getElementById(hitids[p.xval][hit]).innerHTML;
+				}
+              },});
+			  var hitids=new Array();
+			  var hitinfo=new Array();
+			  hitids[0] = new Array("id68759","idp939504","id125586","id78346","id81112","id143998");
+hitids[136] = new Array("id63712");
+hitids[303] = new Array("id61485");
+hitids[709] = new Array("id53303");
+hitids[1152] = new Array("id57672");
+hitids[1595] = new Array("id59950");
+hitids[2039] = new Array("id72569");
+hitids[2494] = new Array("idp47392");
+hitids[4627] = new Array();
+
+hitinfo[0] ="id: id68759, reviewer rating: 0 score: 0,</br>id: idp939504, reviewer rating: 0 score: 0,</br>id: id125586, reviewer rating: 1 score: 0,</br>id: id78346, reviewer rating: 1 score: 0,</br>id: id81112, reviewer rating: 1 score: 0,</br>id: id143998, reviewer rating: 1 score: 136,</br>"
+hitinfo[136] ="id: id63712, reviewer rating: 1 score: 167,</br>"
+hitinfo[303] ="id: id61485, reviewer rating: 1 score: 406,</br>"
+hitinfo[709] ="id: id53303, reviewer rating: 0 score: 443,</br>"
+hitinfo[1152] ="id: id57672, reviewer rating: 0 score: 443,</br>"
+hitinfo[1595] ="id: id59950, reviewer rating: 0 score: 444,</br>"
+hitinfo[2039] ="id: id72569, reviewer rating: 0 score: 455,</br>"
+hitinfo[2494] ="id: idp47392, reviewer rating: 1 score: 2133,</br>"
+hitinfo[4627] =""
+</script>
+<h3>Detailed results for reviewer score 4</h3>
+
+<h3>Detailed results for reviewer score 3</h3>
+
+<h3>Detailed results for reviewer score 2</h3>
+
+<h3>Detailed results for reviewer score 1</h3>
+<div id="idp47392"><h4>Hit idp47392</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 2133</li>
+ <li>Reference to collection: _PREFIX_/63/f025021.xhtml#idp47392</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $\sum _{{n=1}}^{{\infty}}\frac{(-1)^{n}|\sin n|}{n}$ at pos:2316(0%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 1.96875 * WORD_SCORE[infinite]  + 2.0 * WORD_SCORE[series]  + 1.75 * WORD_SCORE[ conditionally]  + 1.875 * WORD_SCORE[ convergent]  + 1.9375 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.5 * TOKEN_SCORE[(]  + 1.5 * TOKEN_SCORE[)]  + 1.5 * TOKEN_SCORE[infty]  + 1.5 * TOKEN_SCORE[frac]  + 1.75 * TOKEN_SCORE[1]  + 1.5 * TOKEN_SCORE[sin]  + 1.9375 * TOKEN_SCORE[\]  + 1.5 * TOKEN_SCORE[_]  + 1.75 * TOKEN_SCORE[^]  + 1.5 * TOKEN_SCORE[=] 
+			=+100.0+1.96875*15.5564982098831+2.0*13.2791113129629+1.75*956.558082111132+1.875*155.947852800104+1.9375*0.06672875812593+1.5*0.450727438769192+1.5*0.00418257496311516+1.5*0.00417601612706465+1.5*0.382802832581921+1.5*0.0366287198730455+1.75*0.0102451205633244+1.5*2.85818152377079+1.9375*5.92879328325965E-4+1.5*0.00257082788077282+1.75*0.00338742677192689+1.5*2.678806489 = 2133.3453534361624'
+	final score ~ 2133
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="idp47392" alttext="\sum _{{n=1}}^{{\infty}}\frac{(-1)^{n}|\sin n|}{n}" display="block"><semantics id="idp48464"><mrow id="idp48640"><mover id="idp48768"><munder id="idp48896"><mo id="idp49072" movablelimits="false">∑</mo><mrow id="idp49568"><mi id="idp49696">n</mi><mo id="idp50000" movablelimits="false">=</mo><mn id="idp50576">1</mn></mrow></munder><mi id="idp50832" mathvariant="normal">∞</mi></mover><mfrac id="idp51392"><mrow id="idp51520"><msup id="idp51696"><mrow id="idp51824"><mo id="idp51952">(</mo><mrow id="idp52256"><mo id="idp52384">-</mo><mn id="idp52688">1</mn></mrow><mo id="idp52944">)</mo></mrow><mi id="idp53248">n</mi></msup><mo id="idp53504">⁢</mo><mrow id="idp53792"><mo id="idp53920" fence="true">|</mo><mrow id="idp54496"><mi id="idp54624">sin</mi><mo id="idp54880">⁡</mo><mi id="idp55168">n</mi></mrow><mo id="idp55424" fence="true">|</mo></mrow></mrow><mi id="idp55952">n</mi></mfrac></mrow><annotation-xml id="idp56208" encoding="MathML-Content"><apply id="idp56608"><apply id="idp56736"><csymbol id="idp56912" cd="ambiguous">superscript</csymbol><apply id="idp57472"><csymbol id="idp57600" cd="ambiguous">subscript</csymbol><sum id="idp58208"/><apply id="idp58336"><eq id="idp58512"/><ci id="idp58640">n</ci><cn id="idp58944" type="integer">1</cn></apply></apply><infinity id="idp59520"/></apply><apply id="idp59648"><divide id="idp59824"/><apply id="idp59952"><times id="idp60128"/><apply id="idp60256"><csymbol id="idp60384" cd="ambiguous">superscript</csymbol><apply id="idp60944"><minus id="idp61120"/><cn id="idp61248" type="integer">1</cn></apply><ci id="idp61776">n</ci></apply><apply id="idp62032"><abs id="idp62160"/><apply id="idp62288"><sin id="idp62416"/><ci id="idp62544">n</ci></apply></apply></apply><ci id="idp62800">n</ci></apply></apply></annotation-xml><annotation id="idp63056" encoding="application/x-tex">\sum _{{n=1}}^{{\infty}}\frac{(-1)^{n}|\sin n|}{n}</annotation></semantics></math>
+
+<br /> End of MathML <br />
+.</div><div id="id61485"><h4>Hit id61485</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 406</li>
+ <li>Reference to collection: _PREFIX_/8/f003003.xhtml#id61485</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $\displaystyle=\displaystyle\frac{1}{12\pi^{2}}-\displaystyle\frac{{\bar{x}}^{2}}{4\pi^{4}}\sum _{{n=1}}^{{\infty}}\Big[1-n{\bar{x}}\Big({\rm ci}(n{\bar{x}})\sin(n{\bar{x}})$ at pos:119886(51%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 1.75 * WORD_SCORE[series]  + 1.75 * WORD_SCORE[ convergent]  + 1.9375 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.875 * TOKEN_SCORE[(]  + 1.75 * TOKEN_SCORE[)]  + 1.5 * TOKEN_SCORE[infty]  + 1.75 * TOKEN_SCORE[frac]  + 1.9375 * TOKEN_SCORE[1]  + 1.5 * TOKEN_SCORE[sin]  + 1.9999923706054688 * TOKEN_SCORE[\]  + 1.5 * TOKEN_SCORE[_]  + 1.9375 * TOKEN_SCORE[^]  + 1.75 * TOKEN_SCORE[=] 
+			=+100.0+1.75*13.2791113129629+1.75*155.947852800104+1.9375*0.06672875812593+1.5*0.450727438769192+1.875*0.00418257496311516+1.75*0.00417601612706465+1.5*0.382802832581921+1.75*0.0366287198730455+1.9375*0.0102451205633244+1.5*2.85818152377079+1.9999923706054688*5.92879328325965E-4+1.5*0.00257082788077282+1.9375*0.00338742677192689+1.75*2.678806489 = 406.6126588876415'
+	final score ~ 406
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id61485" alttext="\displaystyle=\displaystyle\frac{1}{12\pi^{2}}-\displaystyle\frac{{\bar{x}}^{2}}{4\pi^{4}}\sum _{{n=1}}^{{\infty}}\Big[1-n{\bar{x}}\Big({\rm ci}(n{\bar{x}})\sin(n{\bar{x}})" display="inline"><m:semantics id="id61492"><m:mrow id="id61493"><m:mo id="id61494">=</m:mo><m:mstyle id="id61496" displaystyle="true"><m:mfrac id="id61499"><m:mn id="id61500">1</m:mn><m:mrow id="id61502"><m:mn id="id61504">12</m:mn><m:mo id="id61506">⁢</m:mo><m:msup id="id61508"><m:mi id="id61509">π</m:mi><m:mn id="id61512">2</m:mn></m:msup></m:mrow></m:mfrac></m:mstyle><m:mo id="id61514">-</m:mo><m:mstyle id="id61516" displaystyle="true"><m:mfrac id="id61519"><m:msup id="id61520"><m:mover id="id61521" accent="true"><m:mi id="id61525">x</m:mi><m:mo id="id61527">¯</m:mo></m:mover><m:mn id="id61529">2</m:mn></m:msup><m:mrow id="id61531"><m:mn id="id61532">4</m:mn><m:mo id="id61534">⁢</m:mo><m:msup id="id61537"><m:mi id="id61538">π</m:mi><m:mn id="id61540">4</m:mn></m:msup></m:mrow></m:mfrac></m:mstyle><m:mover id="id61542"><m:munder id="id61544"><m:mo id="id61545" movablelimits="false">∑</m:mo><m:mrow id="id61549"><m:mi id="id61550">n</m:mi><m:mo id="id61552" movablelimits="false">=</m:mo><m:mn id="id61557">1</m:mn></m:mrow></m:munder><m:mi id="id61559" mathvariant="normal">∞</m:mi></m:mover><m:mo id="id61564" mathsize="1.5em">[</m:mo><m:mn id="id61568">1</m:mn><m:mo id="id61570">-</m:mo><m:mi id="id61572">n</m:mi><m:mover id="id61574" accent="true"><m:mi id="id61578">x</m:mi><m:mo id="id61580">¯</m:mo></m:mover><m:mo id="id61582" mathsize="1.5em">(</m:mo><m:mi id="id61587">ci</m:mi><m:mo id="id61589">(</m:mo><m:mi id="id61591">n</m:mi><m:mover id="id61593" accent="true"><m:mi id="id61596">x</m:mi><m:mo id="id61599">¯</m:mo></m:mover><m:mo id="id61601">)</m:mo><m:mi id="id61603">sin</m:mi><m:mo id="id61605">(</m:mo><m:mi id="id61607">n</m:mi><m:mover id="id61610" accent="true"><m:mi id="id61613">x</m:mi><m:mo id="id61615">¯</m:mo></m:mover><m:mo id="id61617">)</m:mo></m:mrow><m:annotation-xml id="id61620" encoding="MathML-Content"><m:eq id="id61623"/></m:annotation-xml><m:annotation id="id61624" encoding="application/x-tex">\displaystyle=\displaystyle\frac{1}{12\pi^{2}}-\displaystyle\frac{{\bar{x}}^{2}}{4\pi^{4}}\sum _{{n=1}}^{{\infty}}\Big[1-n{\bar{x}}\Big({\rm ci}(n{\bar{x}})\sin(n{\bar{x}})</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id63712"><h4>Hit id63712</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 167</li>
+ <li>Reference to collection: _PREFIX_/184/f073229.xhtml#id63712</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $\displaystyle 4\frac{v}{\pi}\sum _{{n=0}}^{\infty}\frac{1}{2n+1}\sin\frac{2\pi}{T}(2n+1)t.$ at pos:151637(10%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 2.0 * WORD_SCORE[infinite]  + 1.99993896484375 * WORD_SCORE[series]  + 1.875 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.5 * TOKEN_SCORE[(]  + 1.5 * TOKEN_SCORE[)]  + 1.5 * TOKEN_SCORE[infty]  + 1.875 * TOKEN_SCORE[frac]  + 1.875 * TOKEN_SCORE[1]  + 1.5 * TOKEN_SCORE[sin]  + 1.998046875 * TOKEN_SCORE[\]  + 1.5 * TOKEN_SCORE[_]  + 1.5 * TOKEN_SCORE[^]  + 1.5 * TOKEN_SCORE[=] 
+			=+100.0+2.0*15.5564982098831+1.99993896484375*13.2791113129629+1.875*0.06672875812593+1.5*0.450727438769192+1.5*0.00418257496311516+1.5*0.00417601612706465+1.5*0.382802832581921+1.875*0.0366287198730455+1.875*0.0102451205633244+1.5*2.85818152377079+1.998046875*5.92879328325965E-4+1.5*0.00257082788077282+1.5*0.00338742677192689+1.5*2.678806489 = 167.46185072084887'
+	final score ~ 167
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id63712" alttext="\displaystyle 4\frac{v}{\pi}\sum _{{n=0}}^{\infty}\frac{1}{2n+1}\sin\frac{2\pi}{T}(2n+1)t." display="inline"><m:semantics id="id63718"><m:mrow id="id63720"><m:mrow id="id63721"><m:mn id="id63722">4</m:mn><m:mo id="id63724">⁢</m:mo><m:mstyle id="id63726" displaystyle="true"><m:mfrac id="id63730"><m:mi id="id63731">v</m:mi><m:mi id="id63733">π</m:mi></m:mfrac></m:mstyle><m:mo id="id63735">⁢</m:mo><m:mrow id="id63738"><m:mover id="id63739"><m:munder id="id63740"><m:mo id="id63741" movablelimits="false">∑</m:mo><m:mrow id="id63745"><m:mi id="id63746">n</m:mi><m:mo id="id63749" movablelimits="false">=</m:mo><m:mn id="id63753">0</m:mn></m:mrow></m:munder><m:mi id="id63755" mathvariant="normal">∞</m:mi></m:mover><m:mstyle id="id63760" displaystyle="true"><m:mfrac id="id63763"><m:mn id="id63764">1</m:mn><m:mrow id="id63766"><m:mrow id="id63767"><m:mn id="id63768">2</m:mn><m:mo id="id63771">⁢</m:mo><m:mi id="id63773">n</m:mi></m:mrow><m:mo id="id63775">+</m:mo><m:mn id="id63777">1</m:mn></m:mrow></m:mfrac></m:mstyle><m:mo id="id63779">⁢</m:mo><m:mrow id="id63782"><m:mi id="id63783">sin</m:mi><m:mo id="id63785">⁡</m:mo><m:mstyle id="id63787" displaystyle="true"><m:mfrac id="id63791"><m:mrow id="id63792"><m:mn id="id63793">2</m:mn><m:mo id="id63795">⁢</m:mo><m:mi id="id63797">π</m:mi></m:mrow><m:mi id="id63800">T</m:mi></m:mfrac></m:mstyle></m:mrow><m:mo id="id63802">⁢</m:mo><m:mfenced id="id63804" open="(" close=")"><m:mrow id="id63809"><m:mrow id="id63810"><m:mn id="id63812">2</m:mn><m:mo id="id63814">⁢</m:mo><m:mi id="id63816">n</m:mi></m:mrow><m:mo id="id63818">+</m:mo><m:mn id="id63820">1</m:mn></m:mrow></m:mfenced><m:mo id="id63822">⁢</m:mo><m:mi id="id63825">t</m:mi></m:mrow></m:mrow><m:mo id="id63827">.</m:mo></m:mrow><m:annotation-xml id="id63829" encoding="MathML-Content"><m:apply id="id63832"><m:times id="id63834"/><m:cn id="id63835" type="integer">4</m:cn><m:apply id="id63839"><m:divide id="id63840"/><m:ci id="id63841">v</m:ci><m:ci id="id63843">π</m:ci></m:apply><m:apply id="id63846"><m:apply id="id63847"><m:csymbol id="id63848" cd="ambiguous">superscript</m:csymbol><m:apply id="id63852"><m:csymbol id="id63854" cd="ambiguous">subscript</m:csymbol><m:sum id="id63858"/><m:apply id="id63859"><m:eq id="id63860"/><m:ci id="id63861">n</m:ci><m:cn id="id63864" type="integer">0</m:cn></m:apply></m:apply><m:infinity id="id63868"/></m:apply><m:apply id="id63869"><m:times id="id63870"/><m:apply id="id63871"><m:divide id="id63872"/><m:cn id="id63873" type="integer">1</m:cn><m:apply id="id63878"><m:plus id="id63879"/><m:apply id="id63880"><m:times id="id63881"/><m:cn id="id63882" type="integer">2</m:cn><m:ci id="id63886">n</m:ci></m:apply><m:cn id="id63888" type="integer">1</m:cn></m:apply></m:apply><m:apply id="id63893"><m:sin id="id63894"/><m:apply id="id63895"><m:divide id="id63896"/><m:apply id="id63897"><m:times id="id63898"/><m:cn id="id63899" type="integer">2</m:cn><m:ci id="id63904">π</m:ci></m:apply><m:ci id="id63906">T</m:ci></m:apply></m:apply><m:apply id="id63908"><m:plus id="id63909"/><m:apply id="id63910"><m:times id="id63911"/><m:cn id="id63912" type="integer">2</m:cn><m:ci id="id63917">n</m:ci></m:apply><m:cn id="id63919" type="integer">1</m:cn></m:apply><m:ci id="id63923">t</m:ci></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id63926" encoding="application/x-tex">\displaystyle 4\frac{v}{\pi}\sum _{{n=0}}^{\infty}\frac{1}{2n+1}\sin\frac{2\pi}{T}(2n+1)t.</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id143998"><h4>Hit id143998</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 136</li>
+ <li>Reference to collection: _PREFIX_/184/f073230.xhtml#id143998</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $\displaystyle\sum _{{n=1}}^{{\infty}}\frac{\sin 2\pi(2n+1)q}{2n+1}$ at pos:1359028(70%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 1.9999990463256836 * WORD_SCORE[series]  + 1.875 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.5 * TOKEN_SCORE[(]  + 1.5 * TOKEN_SCORE[)]  + 1.5 * TOKEN_SCORE[infty]  + 1.5 * TOKEN_SCORE[frac]  + 1.875 * TOKEN_SCORE[1]  + 1.5 * TOKEN_SCORE[sin]  + 1.984375 * TOKEN_SCORE[\]  + 1.5 * TOKEN_SCORE[_]  + 1.5 * TOKEN_SCORE[^]  + 1.5 * TOKEN_SCORE[=] 
+			=+100.0+1.9999990463256836*13.2791113129629+1.875*0.06672875812593+1.5*0.450727438769192+1.5*0.00418257496311516+1.5*0.00417601612706465+1.5*0.382802832581921+1.5*0.0366287198730455+1.875*0.0102451205633244+1.5*2.85818152377079+1.984375*5.92879328325965E-4+1.5*0.00257082788077282+1.5*0.00338742677192689+1.5*2.678806489 = 136.33590825404463'
+	final score ~ 136
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id143998" alttext="\displaystyle\sum _{{n=1}}^{{\infty}}\frac{\sin 2\pi(2n+1)q}{2n+1}" display="inline"><m:semantics id="id144004"><m:mrow id="id144005"><m:mover id="id144006"><m:munder id="id144007"><m:mo id="id144008" movablelimits="false">∑</m:mo><m:mrow id="id144013"><m:mi id="id144014">n</m:mi><m:mo id="id144016" movablelimits="false">=</m:mo><m:mn id="id144021">1</m:mn></m:mrow></m:munder><m:mi id="id144023" mathvariant="normal">∞</m:mi></m:mover><m:mstyle id="id144028" displaystyle="true"><m:mfrac id="id144031"><m:mrow id="id144032"><m:mrow id="id144033"><m:mi id="id144034">sin</m:mi><m:mo id="id144036">⁡</m:mo><m:mrow id="id144039"><m:mn id="id144040">2</m:mn><m:mo id="id144042">⁢</m:mo><m:mi id="id144044">π</m:mi></m:mrow></m:mrow><m:mo id="id144047">⁢</m:mo><m:mfenced id="id144049" open="(" close=")"><m:mrow id="id144054"><m:mrow id="id144055"><m:mn id="id144056">2</m:mn><m:mo id="id144058">⁢</m:mo><m:mi id="id144061">n</m:mi></m:mrow><m:mo id="id144063">+</m:mo><m:mn id="id144065">1</m:mn></m:mrow></m:mfenced><m:mo id="id144067">⁢</m:mo><m:mi id="id144070">q</m:mi></m:mrow><m:mrow id="id144072"><m:mrow id="id144073"><m:mn id="id144074">2</m:mn><m:mo id="id144076">⁢</m:mo><m:mi id="id144078">n</m:mi></m:mrow><m:mo id="id144080">+</m:mo><m:mn id="id144083">1</m:mn></m:mrow></m:mfrac></m:mstyle></m:mrow><m:annotation-xml id="id144085" encoding="MathML-Content"><m:apply id="id144088"><m:apply id="id144089"><m:csymbol id="id144090" cd="ambiguous">superscript</m:csymbol><m:apply id="id144095"><m:csymbol id="id144096" cd="ambiguous">subscript</m:csymbol><m:sum id="id144101"/><m:apply id="id144102"><m:eq id="id144103"/><m:ci id="id144104">n</m:ci><m:cn id="id144106" type="integer">1</m:cn></m:apply></m:apply><m:infinity id="id144110"/></m:apply><m:apply id="id144111"><m:divide id="id144112"/><m:apply id="id144114"><m:times id="id144115"/><m:apply id="id144116"><m:sin id="id144117"/><m:apply id="id144118"><m:times id="id144119"/><m:cn id="id144120" type="integer">2</m:cn><m:ci id="id144124">π</m:ci></m:apply></m:apply><m:apply id="id144127"><m:plus id="id144128"/><m:apply id="id144129"><m:times id="id144130"/><m:cn id="id144131" type="integer">2</m:cn><m:ci id="id144135">n</m:ci></m:apply><m:cn id="id144138" type="integer">1</m:cn></m:apply><m:ci id="id144142">q</m:ci></m:apply><m:apply id="id144144"><m:plus id="id144145"/><m:apply id="id144146"><m:times id="id144147"/><m:cn id="id144148" type="integer">2</m:cn><m:ci id="id144153">n</m:ci></m:apply><m:cn id="id144155" type="integer">1</m:cn></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id144159" encoding="application/x-tex">\displaystyle\sum _{{n=1}}^{{\infty}}\frac{\sin 2\pi(2n+1)q}{2n+1}</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id125586"><h4>Hit id125586</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/184/f073230.xhtml#id125586</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:1078393(000056%)
+	VariableMap:[geq, kx, n x 2, sum, k x 2, infty, ,, frac, 2, 1 x 2, quad, displaystyle, sin, \ x 7, _, ^ x 2, =]
+	Expects 3 occurences for 'n' but has only 2
+	Expects 1 occurences for '(' but has only 0
+	Expects 1 occurences for ')' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id125586" alttext="\displaystyle\sum _{{k=1}}^{{\infty}}\frac{\sin kx}{k^{{2n}}},\quad n\geq 1" display="inline"><m:semantics id="id125592"><m:mrow id="id125593"><m:mrow id="id125594"><m:mrow id="id125595"><m:mover id="id125596"><m:munder id="id125597"><m:mo id="id125598" movablelimits="false">∑</m:mo><m:mrow id="id125603"><m:mi id="id125604">k</m:mi><m:mo id="id125606" movablelimits="false">=</m:mo><m:mn id="id125611">1</m:mn></m:mrow></m:munder><m:mi id="id125613" mathvariant="normal">∞</m:mi></m:mover><m:mstyle id="id125618" displaystyle="true"><m:mfrac id="id125621"><m:mrow id="id125622"><m:mi id="id125623">sin</m:mi><m:mo id="id125625">⁡</m:mo><m:mrow id="id125628"><m:mi id="id125629">k</m:mi><m:mo id="id125631">⁢</m:mo><m:mi id="id125633">x</m:mi></m:mrow></m:mrow><m:msup id="id125635"><m:mi id="id125636">k</m:mi><m:mrow id="id125638"><m:mn id="id125640">2</m:mn><m:mo id="id125642">⁢</m:mo><m:mi id="id125644">n</m:mi></m:mrow></m:msup></m:mfrac></m:mstyle></m:mrow><m:mo id="id125646">,</m:mo><m:mi id="id125648">n</m:mi></m:mrow><m:mo id="id125650">≥</m:mo><m:mn id="id125653">1</m:mn></m:mrow><m:annotation-xml id="id125655" encoding="MathML-Content"><m:apply id="id125658"><m:geq id="id125659"/><m:apply id="id125660"><m:list id="id125662"/><m:apply id="id125663"><m:apply id="id125664"><m:csymbol id="id125665" cd="ambiguous">superscript</m:csymbol><m:apply id="id125669"><m:csymbol id="id125670" cd="ambiguous">subscript</m:csymbol><m:sum id="id125675"/><m:apply id="id125676"><m:eq id="id125677"/><m:ci id="id125678">k</m:ci><m:cn id="id125680" type="integer">1</m:cn></m:apply></m:apply><m:infinity id="id125685"/></m:apply><m:apply id="id125686"><m:divide id="id125687"/><m:apply id="id125688"><m:sin id="id125689"/><m:apply id="id125690"><m:times id="id125691"/><m:ci id="id125692">k</m:ci><m:ci id="id125694">x</m:ci></m:apply></m:apply><m:apply id="id125697"><m:csymbol id="id125698" cd="ambiguous">superscript</m:csymbol><m:ci id="id125702">k</m:ci><m:apply id="id125704"><m:times id="id125706"/><m:cn id="id125707" type="integer">2</m:cn><m:ci id="id125711">n</m:ci></m:apply></m:apply></m:apply></m:apply><m:ci id="id125713">n</m:ci></m:apply><m:cn id="id125715" type="integer">1</m:cn></m:apply></m:annotation-xml><m:annotation id="id125720" encoding="application/x-tex">\displaystyle\sum _{{k=1}}^{{\infty}}\frac{\sin kx}{k^{{2n}}},\quad n\geq 1</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id78346"><h4>Hit id78346</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/3/f000870.xhtml#id78346</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:369921(000041%)
+	VariableMap:[geq, kx, n x 2, sum, k x 2, infty, ,, frac, 2, 1 x 2, displaystyle, sin, ;, \ x 7, _, ^ x 2, =]
+	Expects 3 occurences for 'n' but has only 2
+	Expects 1 occurences for '(' but has only 0
+	Expects 1 occurences for ')' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id78346" alttext="\displaystyle\sum _{{k=1}}^{{\infty}}\frac{\sin kx}{k^{{2n}}},\; n\geq 1" display="inline"><m:semantics id="id78352"><m:mrow id="id78353"><m:mrow id="id78354"><m:mrow id="id78355"><m:mover id="id78356"><m:munder id="id78357"><m:mo id="id78358" movablelimits="false">∑</m:mo><m:mrow id="id78363"><m:mi id="id78364">k</m:mi><m:mo id="id78366" movablelimits="false">=</m:mo><m:mn id="id78370">1</m:mn></m:mrow></m:munder><m:mi id="id78372" mathvariant="normal">∞</m:mi></m:mover><m:mstyle id="id78377" displaystyle="true"><m:mfrac id="id78380"><m:mrow id="id78382"><m:mi id="id78383">sin</m:mi><m:mo id="id78385">⁡</m:mo><m:mrow id="id78387"><m:mi id="id78388">k</m:mi><m:mo id="id78390">⁢</m:mo><m:mi id="id78393">x</m:mi></m:mrow></m:mrow><m:msup id="id78395"><m:mi id="id78396">k</m:mi><m:mrow id="id78398"><m:mn id="id78399">2</m:mn><m:mo id="id78401">⁢</m:mo><m:mi id="id78404">n</m:mi></m:mrow></m:msup></m:mfrac></m:mstyle></m:mrow><m:mo id="id78406">,</m:mo><m:mi id="id78408">n</m:mi></m:mrow><m:mo id="id78410">≥</m:mo><m:mn id="id78412">1</m:mn></m:mrow><m:annotation-xml id="id78415" encoding="MathML-Content"><m:apply id="id78418"><m:geq id="id78419"/><m:apply id="id78420"><m:list id="id78421"/><m:apply id="id78422"><m:apply id="id78423"><m:csymbol id="id78424" cd="ambiguous">superscript</m:csymbol><m:apply id="id78429"><m:csymbol id="id78430" cd="ambiguous">subscript</m:csymbol><m:sum id="id78435"/><m:apply id="id78436"><m:eq id="id78437"/><m:ci id="id78438">k</m:ci><m:cn id="id78440" type="integer">1</m:cn></m:apply></m:apply><m:infinity id="id78444"/></m:apply><m:apply id="id78446"><m:divide id="id78447"/><m:apply id="id78448"><m:sin id="id78449"/><m:apply id="id78450"><m:times id="id78451"/><m:ci id="id78452">k</m:ci><m:ci id="id78454">x</m:ci></m:apply></m:apply><m:apply id="id78456"><m:csymbol id="id78457" cd="ambiguous">superscript</m:csymbol><m:ci id="id78462">k</m:ci><m:apply id="id78464"><m:times id="id78465"/><m:cn id="id78466" type="integer">2</m:cn><m:ci id="id78471">n</m:ci></m:apply></m:apply></m:apply></m:apply><m:ci id="id78473">n</m:ci></m:apply><m:cn id="id78475" type="integer">1</m:cn></m:apply></m:annotation-xml><m:annotation id="id78479" encoding="application/x-tex">\displaystyle\sum _{{k=1}}^{{\infty}}\frac{\sin kx}{k^{{2n}}},\; n\geq 1</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id81112"><h4>Hit id81112</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 1</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/224/f089445.xhtml#id81112</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:425857(000081%)
+	VariableMap:[ cos, n x 3, sum, (, ), infty, frac x 2, 1 x 2, P, tau, \ x 7, _, ^, pi, y x 2, = x 2]
+	Expects 1 occurences for 'sin' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 1</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id81112" alttext="P(y)=\sum _{{n=1}}^{{\infty}}\frac{1}{n}\cos\frac{\pi n}{\tau}y" display="inline"><m:semantics id="id81118"><m:mrow id="id81119"><m:mrow id="id81120"><m:mi id="id81122">P</m:mi><m:mo id="id81124">⁢</m:mo><m:mfenced id="id81126" open="(" close=")"><m:mi id="id81131">y</m:mi></m:mfenced></m:mrow><m:mo id="id81133">=</m:mo><m:mrow id="id81135"><m:msubsup id="id81136"><m:mo id="id81138">∑</m:mo><m:mrow id="id81140"><m:mi id="id81141">n</m:mi><m:mo id="id81143">=</m:mo><m:mn id="id81145">1</m:mn></m:mrow><m:mi id="id81147" mathvariant="normal">∞</m:mi></m:msubsup><m:mfrac id="id81152"><m:mn id="id81153">1</m:mn><m:mi id="id81155">n</m:mi></m:mfrac><m:mo id="id81157">⁢</m:mo><m:mrow id="id81160"><m:mi id="id81161">cos</m:mi><m:mo id="id81163">⁡</m:mo><m:mrow id="id81165"><m:mfrac id="id81166"><m:mrow id="id81168"><m:mi id="id81169">π</m:mi><m:mo id="id81171">⁢</m:mo><m:mi id="id81173">n</m:mi></m:mrow><m:mi id="id81176">τ</m:mi></m:mfrac><m:mo id="id81178">⁢</m:mo><m:mi id="id81180">y</m:mi></m:mrow></m:mrow></m:mrow></m:mrow><m:annotation-xml id="id81182" encoding="MathML-Content"><m:apply id="id81186"><m:eq id="id81187"/><m:apply id="id81188"><m:times id="id81189"/><m:ci id="id81190">P</m:ci><m:ci id="id81192">y</m:ci></m:apply><m:apply id="id81194"><m:apply id="id81195"><m:csymbol id="id81196" cd="ambiguous">superscript</m:csymbol><m:apply id="id81201"><m:csymbol id="id81202" cd="ambiguous">subscript</m:csymbol><m:sum id="id81207"/><m:apply id="id81208"><m:eq id="id81209"/><m:ci id="id81210">n</m:ci><m:cn id="id81212" type="integer">1</m:cn></m:apply></m:apply><m:infinity id="id81217"/></m:apply><m:apply id="id81218"><m:times id="id81219"/><m:apply id="id81220"><m:divide id="id81221"/><m:cn id="id81222" type="integer">1</m:cn><m:ci id="id81226">n</m:ci></m:apply><m:apply id="id81228"><m:cos id="id81230"/><m:apply id="id81231"><m:times id="id81232"/><m:apply id="id81233"><m:divide id="id81234"/><m:apply id="id81235"><m:times id="id81236"/><m:ci id="id81237">π</m:ci><m:ci id="id81239">n</m:ci></m:apply><m:ci id="id81242">τ</m:ci></m:apply><m:ci id="id81244">y</m:ci></m:apply></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id81246" encoding="application/x-tex">P(y)=\sum _{{n=1}}^{{\infty}}\frac{1}{n}\cos\frac{\pi n}{\tau}y</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div>
+<h3>Detailed results for reviewer score 0</h3>
+<div id="id72569"><h4>Hit id72569</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 455</li>
+ <li>Reference to collection: _PREFIX_/145/f057910.xhtml#id72569</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $\displaystyle&lt;x|e^{{-tL}}|x\geq\frac{2}{a(4\pi t)^{{\frac{D-1}{2}}}}\sum _{{n=1}}^{\infty}\sin^{2}\frac{n\pi x}{a}\:\exp{-\frac{n^{2}\pi^{2}\: t}{a^{2}})}\,.$ at pos:282441(69%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 1.75 * WORD_SCORE[infinite]  + 1.9375 * WORD_SCORE[series]  + 1.875 * WORD_SCORE[ convergent]  + 1.875 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.5 * TOKEN_SCORE[(]  + 1.75 * TOKEN_SCORE[)]  + 1.5 * TOKEN_SCORE[infty]  + 1.9375 * TOKEN_SCORE[frac]  + 1.75 * TOKEN_SCORE[1]  + 1.5 * TOKEN_SCORE[sin]  + 1.9999847412109375 * TOKEN_SCORE[\]  + 1.5 * TOKEN_SCORE[_]  + 1.9921875 * TOKEN_SCORE[^]  + 1.5 * TOKEN_SCORE[=] 
+			=+100.0+1.75*15.5564982098831+1.9375*13.2791113129629+1.875*155.947852800104+1.875*0.06672875812593+1.5*0.450727438769192+1.5*0.00418257496311516+1.75*0.00417601612706465+1.5*0.382802832581921+1.9375*0.0366287198730455+1.75*0.0102451205633244+1.5*2.85818152377079+1.9999847412109375*5.92879328325965E-4+1.5*0.00257082788077282+1.9921875*0.00338742677192689+1.5*2.678806489 = 455.1495372611353'
+	final score ~ 455
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id72569" alttext="\displaystyle&lt;x|e^{{-tL}}|x\geq\frac{2}{a(4\pi t)^{{\frac{D-1}{2}}}}\sum _{{n=1}}^{\infty}\sin^{2}\frac{n\pi x}{a}\:\exp{-\frac{n^{2}\pi^{2}\: t}{a^{2}})}\,." display="inline"><m:semantics id="id72567"><m:mrow id="id72576"><m:mo id="id72577">&lt;</m:mo><m:mi id="id72579">x</m:mi><m:mo id="id72581">|</m:mo><m:msup id="id72583"><m:mi id="id72584">e</m:mi><m:mrow id="id72586"><m:mo id="id72587">-</m:mo><m:mrow id="id72590"><m:mi id="id72591">t</m:mi><m:mo id="id72593">⁢</m:mo><m:mi id="id72595">L</m:mi></m:mrow></m:mrow></m:msup><m:mo id="id72597">|</m:mo><m:mi id="id72599">x</m:mi><m:mo id="id72601">≥</m:mo><m:mstyle id="id72603" displaystyle="true"><m:mfrac id="id72607"><m:mn id="id72608">2</m:mn><m:mrow id="id72610"><m:mi id="id72611">a</m:mi><m:mo id="id72613">⁢</m:mo><m:msup id="id72616"><m:mfenced id="id72617" open="(" close=")"><m:mrow id="id72622"><m:mn id="id72623">4</m:mn><m:mo id="id72625">⁢</m:mo><m:mi id="id72627">π</m:mi><m:mo id="id72630">⁢</m:mo><m:mi id="id72632">t</m:mi></m:mrow></m:mfenced><m:mfrac id="id72634"><m:mrow id="id72635"><m:mi id="id72636">D</m:mi><m:mo id="id72638">-</m:mo><m:mn id="id72641">1</m:mn></m:mrow><m:mn id="id72643">2</m:mn></m:mfrac></m:msup></m:mrow></m:mfrac></m:mstyle><m:mover id="id72645"><m:munder id="id72646"><m:mo id="id72647" movablelimits="false">∑</m:mo><m:mrow id="id72652"><m:mi id="id72653">n</m:mi><m:mo id="id72655" movablelimits="false">=</m:mo><m:mn id="id72659">1</m:mn></m:mrow></m:munder><m:mi id="id72661" mathvariant="normal">∞</m:mi></m:mover><m:msup id="id72666"><m:mi id="id72667">sin</m:mi><m:mn id="id72669">2</m:mn></m:msup><m:mstyle id="id72671" displaystyle="true"><m:mfrac id="id72675"><m:mrow id="id72676"><m:mi id="id72677">n</m:mi><m:mo id="id72679">⁢</m:mo><m:mi id="id72681">π</m:mi><m:mo id="id72684">⁢</m:mo><m:mi id="id72686">x</m:mi></m:mrow><m:mi id="id72688">a</m:mi></m:mfrac></m:mstyle><m:mi id="id72690">exp</m:mi><m:mo id="id72693">-</m:mo><m:mstyle id="id72695" displaystyle="true"><m:mfrac id="id72698"><m:mrow id="id72699"><m:msup id="id72700"><m:mi id="id72701">n</m:mi><m:mn id="id72703">2</m:mn></m:msup><m:mo id="id72706">⁢</m:mo><m:msup id="id72708"><m:mi id="id72709">π</m:mi><m:mn id="id72711">2</m:mn></m:msup><m:mo id="id72714">⁢</m:mo><m:mi id="id72716">t</m:mi></m:mrow><m:msup id="id72718"><m:mi id="id72719">a</m:mi><m:mn id="id72721">2</m:mn></m:msup></m:mfrac></m:mstyle><m:mo id="id72723">)</m:mo><m:mo id="id72726">.</m:mo></m:mrow><m:annotation-xml id="id72728" encoding="MathML-Content"><m:math id="id72733" alttext="\displaystyle&lt;x|e^{{-tL}}|x\geq\frac{2}{a(4\pi t)^{{\frac{D-1}{2}}}}\sum _{{n=1}}^{\infty}\sin^{2}\frac{n\pi x}{a}\:\exp{-\frac{n^{2}\pi^{2}\: t}{a^{2}})}\,." display="inline"/></m:annotation-xml><m:annotation id="id72731" encoding="application/x-tex">\displaystyle&lt;x|e^{{-tL}}|x\geq\frac{2}{a(4\pi t)^{{\frac{D-1}{2}}}}\sum _{{n=1}}^{\infty}\sin^{2}\frac{n\pi x}{a}\:\exp{-\frac{n^{2}\pi^{2}\: t}{a^{2}})}\,.</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id59950"><h4>Hit id59950</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 444</li>
+ <li>Reference to collection: _PREFIX_/9/f003223.xhtml#id59950</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $\displaystyle f(\bar{x})=\displaystyle\frac{}{}\sum _{{n=1}}^{{\infty}}\displaystyle\frac{1}{n^{2}}{\Big(}{\rm ci}(n\bar{x})\cos(n\bar{x})+{\rm si}(n\bar{x})\sin(n\bar{x}){\Big)},~~~~~\bar{x}=\displaystyle\frac{\pi m^{2}}{\bar{\mu}^{2}},$ at pos:99026(74%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 1.984375 * WORD_SCORE[series]  + 1.96875 * WORD_SCORE[ convergent]  + 1.984375 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.984375 * TOKEN_SCORE[(]  + 1.984375 * TOKEN_SCORE[)]  + 1.5 * TOKEN_SCORE[infty]  + 1.875 * TOKEN_SCORE[frac]  + 1.75 * TOKEN_SCORE[1]  + 1.5 * TOKEN_SCORE[sin]  + 1.9999999403953552 * TOKEN_SCORE[\]  + 1.5 * TOKEN_SCORE[_]  + 1.9375 * TOKEN_SCORE[^]  + 1.875 * TOKEN_SCORE[=] 
+			=+100.0+1.984375*13.2791113129629+1.96875*155.947852800104+1.984375*0.06672875812593+1.5*0.450727438769192+1.984375*0.00418257496311516+1.984375*0.00417601612706465+1.5*0.382802832581921+1.875*0.0366287198730455+1.75*0.0102451205633244+1.5*2.85818152377079+1.9999999403953552*5.92879328325965E-4+1.5*0.00257082788077282+1.9375*0.00338742677192689+1.875*2.678806489 = 444.1806159805849'
+	final score ~ 444
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id59950" alttext="\displaystyle f(\bar{x})=\displaystyle\frac{}{}\sum _{{n=1}}^{{\infty}}\displaystyle\frac{1}{n^{2}}{\Big(}{\rm ci}(n\bar{x})\cos(n\bar{x})+{\rm si}(n\bar{x})\sin(n\bar{x}){\Big)},~~~~~\bar{x}=\displaystyle\frac{\pi m^{2}}{\bar{\mu}^{2}}," display="inline"><m:semantics id="id59958"><m:mrow id="id59959"><m:mrow id="id59960"><m:mrow id="id59961"><m:mrow id="id59962"><m:mi id="id59963">f</m:mi><m:mo id="id59965">⁢</m:mo><m:mfenced id="id59968" open="(" close=")"><m:mover id="id59973" accent="true"><m:mi id="id59976">x</m:mi><m:mo id="id59978">¯</m:mo></m:mover></m:mfenced></m:mrow><m:mo id="id59981">=</m:mo><m:mrow id="id59983"><m:mstyle id="id59984" displaystyle="true"><m:mfrac id="id59987"><m:none id="id59988"/><m:none id="id59989"/></m:mfrac></m:mstyle><m:mo id="id59990">⁢</m:mo><m:mrow id="id59993"><m:mover id="id59994"><m:munder id="id59995"><m:mo id="id59996" movablelimits="false">∑</m:mo><m:mrow id="id60001"><m:mi id="id60002">n</m:mi><m:mo id="id60004" movablelimits="false">=</m:mo><m:mn id="id60008">1</m:mn></m:mrow></m:munder><m:mi id="id60010" mathvariant="normal">∞</m:mi></m:mover><m:mstyle id="id60015" displaystyle="true"><m:mfrac id="id60018"><m:mn id="id60020">1</m:mn><m:msup id="id60022"><m:mi id="id60023">n</m:mi><m:mn id="id60025">2</m:mn></m:msup></m:mfrac></m:mstyle><m:mo id="id60027">⁢</m:mo><m:mfenced id="id60029" open="(" close=")"><m:mrow id="id60034"><m:mrow id="id60036"><m:mi id="id60037">ci</m:mi><m:mo id="id60039">⁢</m:mo><m:mfenced id="id60041" open="(" close=")"><m:mrow id="id60046"><m:mi id="id60047">n</m:mi><m:mo id="id60049">⁢</m:mo><m:mover id="id60052" accent="true"><m:mi id="id60055">x</m:mi><m:mo id="id60057">¯</m:mo></m:mover></m:mrow></m:mfenced><m:mo id="id60060">⁢</m:mo><m:mrow id="id60062"><m:mi id="id60063">cos</m:mi><m:mo id="id60065">⁡</m:mo><m:mfenced id="id60068" open="(" close=")"><m:mrow id="id60073"><m:mi id="id60074">n</m:mi><m:mo id="id60076">⁢</m:mo><m:mover id="id60078" accent="true"><m:mi id="id60082">x</m:mi><m:mo id="id60084">¯</m:mo></m:mover></m:mrow></m:mfenced></m:mrow></m:mrow><m:mo id="id60086">+</m:mo><m:mrow id="id60088"><m:mi id="id60089">si</m:mi><m:mo id="id60092">⁢</m:mo><m:mfenced id="id60094" open="(" close=")"><m:mrow id="id60099"><m:mi id="id60100">n</m:mi><m:mo id="id60102">⁢</m:mo><m:mover id="id60105" accent="true"><m:mi id="id60108">x</m:mi><m:mo id="id60110">¯</m:mo></m:mover></m:mrow></m:mfenced><m:mo id="id60112">⁢</m:mo><m:mrow id="id60115"><m:mi id="id60116">sin</m:mi><m:mo id="id60118">⁡</m:mo><m:mfenced id="id60120" open="(" close=")"><m:mrow id="id60126"><m:mi id="id60127">n</m:mi><m:mo id="id60129">⁢</m:mo><m:mover id="id60131" accent="true"><m:mi id="id60134">x</m:mi><m:mo id="id60137">¯</m:mo></m:mover></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow></m:mfenced></m:mrow></m:mrow></m:mrow><m:mo id="id60139">,</m:mo><m:mrow id="id60141"><m:mover id="id60142" accent="true"><m:mi id="id60146">x</m:mi><m:mo id="id60148">¯</m:mo></m:mover><m:mo id="id60150">=</m:mo><m:mstyle id="id60152" displaystyle="true"><m:mfrac id="id60156"><m:mrow id="id60157"><m:mi id="id60158">π</m:mi><m:mo id="id60160">⁢</m:mo><m:msup id="id60162"><m:mi id="id60164">m</m:mi><m:mn id="id60166">2</m:mn></m:msup></m:mrow><m:msup id="id60168"><m:mover id="id60169" accent="true"><m:mi id="id60172">μ</m:mi><m:mo id="id60175">¯</m:mo></m:mover><m:mn id="id60177">2</m:mn></m:msup></m:mfrac></m:mstyle></m:mrow></m:mrow><m:mo id="id60179">,</m:mo></m:mrow><m:annotation-xml id="id60181" encoding="MathML-Content"><m:apply id="id60185"><m:csymbol id="id60186" cd="ambiguous" name="formulae-sequence"/><m:apply id="id60191"><m:eq id="id60192"/><m:apply id="id60193"><m:times id="id60194"/><m:ci id="id60196">f</m:ci><m:apply id="id60198"><m:ci id="id60199">¯</m:ci><m:ci id="id60201">x</m:ci></m:apply></m:apply><m:apply id="id60203"><m:times id="id60204"/><m:apply id="id60205"><m:divide id="id60206"/><m:ci id="id60208"/><m:ci id="id60209"/></m:apply><m:apply id="id60210"><m:apply id="id60211"><m:csymbol id="id60212" cd="ambiguous">superscript</m:csymbol><m:apply id="id60216"><m:csymbol id="id60218" cd="ambiguous">subscript</m:csymbol><m:sum id="id60222"/><m:apply id="id60223"><m:eq id="id60224"/><m:ci id="id60225">n</m:ci><m:cn id="id60228" type="integer">1</m:cn></m:apply></m:apply><m:infinity id="id60232"/></m:apply><m:apply id="id60233"><m:times id="id60234"/><m:apply id="id60235"><m:divide id="id60236"/><m:cn id="id60237" type="integer">1</m:cn><m:apply id="id60242"><m:csymbol id="id60243" cd="ambiguous">superscript</m:csymbol><m:ci id="id60247">n</m:ci><m:cn id="id60250" type="integer">2</m:cn></m:apply></m:apply><m:apply id="id60254"><m:plus id="id60255"/><m:apply id="id60256"><m:times id="id60257"/><m:ci id="id60258">ci</m:ci><m:apply id="id60260"><m:times id="id60261"/><m:ci id="id60262">n</m:ci><m:apply id="id60265"><m:ci id="id60266">¯</m:ci><m:ci id="id60268">x</m:ci></m:apply></m:apply><m:apply id="id60270"><m:cos id="id60271"/><m:apply id="id60272"><m:times id="id60273"/><m:ci id="id60274">n</m:ci><m:apply id="id60277"><m:ci id="id60278">¯</m:ci><m:ci id="id60280">x</m:ci></m:apply></m:apply></m:apply></m:apply><m:apply id="id60282"><m:times id="id60283"/><m:ci id="id60284">si</m:ci><m:apply id="id60286"><m:times id="id60288"/><m:ci id="id60289">n</m:ci><m:apply id="id60291"><m:ci id="id60292">¯</m:ci><m:ci id="id60294">x</m:ci></m:apply></m:apply><m:apply id="id60296"><m:sin id="id60297"/><m:apply id="id60298"><m:times id="id60300"/><m:ci id="id60301">n</m:ci><m:apply id="id60303"><m:ci id="id60304">¯</m:ci><m:ci id="id60306">x</m:ci></m:apply></m:apply></m:apply></m:apply></m:apply></m:apply></m:apply></m:apply></m:apply><m:apply id="id60308"><m:eq id="id60309"/><m:apply id="id60310"><m:ci id="id60312">¯</m:ci><m:ci id="id60314">x</m:ci></m:apply><m:apply id="id60316"><m:divide id="id60317"/><m:apply id="id60318"><m:times id="id60319"/><m:ci id="id60320">π</m:ci><m:apply id="id60323"><m:csymbol id="id60324" cd="ambiguous">superscript</m:csymbol><m:ci id="id60328">m</m:ci><m:cn id="id60331" type="integer">2</m:cn></m:apply></m:apply><m:apply id="id60335"><m:csymbol id="id60336" cd="ambiguous">superscript</m:csymbol><m:apply id="id60341"><m:ci id="id60342">¯</m:ci><m:ci id="id60344">μ</m:ci></m:apply><m:cn id="id60347" type="integer">2</m:cn></m:apply></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id60351" encoding="application/x-tex">\displaystyle f(\bar{x})=\displaystyle\frac{}{}\sum _{{n=1}}^{{\infty}}\displaystyle\frac{1}{n^{2}}{\Big(}{\rm ci}(n\bar{x})\cos(n\bar{x})+{\rm si}(n\bar{x})\sin(n\bar{x}){\Big)},~~~~~\bar{x}=\displaystyle\frac{\pi m^{2}}{\bar{\mu}^{2}},</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id53303"><h4>Hit id53303</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 443</li>
+ <li>Reference to collection: _PREFIX_/9/f003223.xhtml#id53303</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $\displaystyle-\displaystyle\frac{1}{4\pi^{3}}ab\sum _{{n=1}}^{{\infty}}\displaystyle\frac{1}{n}{\Big[}\coth(\displaystyle\frac{n\pi b}{a}){\Big(}{\rm ci}(\displaystyle\frac{n\pi m^{2}}{a})\cos(\displaystyle\frac{n\pi m^{2}}{a})+{\rm si}(\displaystyle\frac{n\pi m^{2}}{a})\sin(\displaystyle\frac{n\pi m^{2}}{a}){\Big)}$ at pos:84052(63%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 1.984375 * WORD_SCORE[series]  + 1.96875 * WORD_SCORE[ convergent]  + 1.9921875 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.984375 * TOKEN_SCORE[(]  + 1.984375 * TOKEN_SCORE[)]  + 1.5 * TOKEN_SCORE[infty]  + 1.9921875 * TOKEN_SCORE[frac]  + 1.875 * TOKEN_SCORE[1]  + 1.5 * TOKEN_SCORE[sin]  + 1.9999999995343387 * TOKEN_SCORE[\]  + 1.5 * TOKEN_SCORE[_]  + 1.984375 * TOKEN_SCORE[^]  + 1.5 * TOKEN_SCORE[=] 
+			=+100.0+1.984375*13.2791113129629+1.96875*155.947852800104+1.9921875*0.06672875812593+1.5*0.450727438769192+1.984375*0.00418257496311516+1.984375*0.00417601612706465+1.5*0.382802832581921+1.9921875*0.0366287198730455+1.875*0.0102451205633244+1.5*2.85818152377079+1.9999999995343387*5.92879328325965E-4+1.5*0.00257082788077282+1.984375*0.00338742677192689+1.5*2.678806489 = 443.1823167194782'
+	final score ~ 443
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id53303" alttext="\displaystyle-\displaystyle\frac{1}{4\pi^{3}}ab\sum _{{n=1}}^{{\infty}}\displaystyle\frac{1}{n}{\Big[}\coth(\displaystyle\frac{n\pi b}{a}){\Big(}{\rm ci}(\displaystyle\frac{n\pi m^{2}}{a})\cos(\displaystyle\frac{n\pi m^{2}}{a})+{\rm si}(\displaystyle\frac{n\pi m^{2}}{a})\sin(\displaystyle\frac{n\pi m^{2}}{a}){\Big)}" display="inline"><m:semantics id="id53311"><m:mrow id="id53312"><m:mo id="id53313">-</m:mo><m:mstyle id="id53316" displaystyle="true"><m:mfrac id="id53319"><m:mn id="id53320">1</m:mn><m:mrow id="id53322"><m:mn id="id53323">4</m:mn><m:mo id="id53325">⁢</m:mo><m:msup id="id53328"><m:mi id="id53329">π</m:mi><m:mn id="id53331">3</m:mn></m:msup></m:mrow></m:mfrac></m:mstyle><m:mi id="id53333">a</m:mi><m:mi id="id53335">b</m:mi><m:mover id="id53338"><m:munder id="id53339"><m:mo id="id53340" movablelimits="false">∑</m:mo><m:mrow id="id53344"><m:mi id="id53345">n</m:mi><m:mo id="id53348" movablelimits="false">=</m:mo><m:mn id="id53352">1</m:mn></m:mrow></m:munder><m:mi id="id53354" mathvariant="normal">∞</m:mi></m:mover><m:mstyle id="id53359" displaystyle="true"><m:mfrac id="id53362"><m:mn id="id53363">1</m:mn><m:mi id="id53365">n</m:mi></m:mfrac></m:mstyle><m:mo id="id53367" mathsize="1.5em">[</m:mo><m:mi id="id59057">coth</m:mi><m:mo id="id59059">(</m:mo><m:mstyle id="id59062" displaystyle="true"><m:mfrac id="id59065"><m:mrow id="id59066"><m:mi id="id59067">n</m:mi><m:mo id="id59069">⁢</m:mo><m:mi id="id59071">π</m:mi><m:mo id="id59073">⁢</m:mo><m:mi id="id59076">b</m:mi></m:mrow><m:mi id="id59078">a</m:mi></m:mfrac></m:mstyle><m:mo id="id59080">)</m:mo><m:mo id="id59082" mathsize="1.5em">(</m:mo><m:mi id="id59087">ci</m:mi><m:mo id="id59089">(</m:mo><m:mstyle id="id59091" displaystyle="true"><m:mfrac id="id59094"><m:mrow id="id59095"><m:mi id="id59096">n</m:mi><m:mo id="id59098">⁢</m:mo><m:mi id="id59101">π</m:mi><m:mo id="id59103">⁢</m:mo><m:msup id="id59106"><m:mi id="id59107">m</m:mi><m:mn id="id59109">2</m:mn></m:msup></m:mrow><m:mi id="id59111">a</m:mi></m:mfrac></m:mstyle><m:mo id="id59113">)</m:mo><m:mi id="id59115">cos</m:mi><m:mo id="id59117">(</m:mo><m:mstyle id="id59120" displaystyle="true"><m:mfrac id="id59123"><m:mrow id="id59124"><m:mi id="id59125">n</m:mi><m:mo id="id59127">⁢</m:mo><m:mi id="id59130">π</m:mi><m:mo id="id59132">⁢</m:mo><m:msup id="id59134"><m:mi id="id59135">m</m:mi><m:mn id="id59138">2</m:mn></m:msup></m:mrow><m:mi id="id59140">a</m:mi></m:mfrac></m:mstyle><m:mo id="id59142">)</m:mo><m:mo id="id59144">+</m:mo><m:mi id="id59146">si</m:mi><m:mo id="id59148">(</m:mo><m:mstyle id="id59150" displaystyle="true"><m:mfrac id="id59154"><m:mrow id="id59155"><m:mi id="id59156">n</m:mi><m:mo id="id59158">⁢</m:mo><m:mi id="id59160">π</m:mi><m:mo id="id59163">⁢</m:mo><m:msup id="id59165"><m:mi id="id59166">m</m:mi><m:mn id="id59168">2</m:mn></m:msup></m:mrow><m:mi id="id59170">a</m:mi></m:mfrac></m:mstyle><m:mo id="id59173">)</m:mo><m:mi id="id59175">sin</m:mi><m:mo id="id59177">(</m:mo><m:mstyle id="id59179" displaystyle="true"><m:mfrac id="id59182"><m:mrow id="id59183"><m:mi id="id59184">n</m:mi><m:mo id="id59187">⁢</m:mo><m:mi id="id59189">π</m:mi><m:mo id="id59191">⁢</m:mo><m:msup id="id59194"><m:mi id="id59195">m</m:mi><m:mn id="id59197">2</m:mn></m:msup></m:mrow><m:mi id="id59199">a</m:mi></m:mfrac></m:mstyle><m:mo id="id59201">)</m:mo><m:mo id="id59203" mathsize="1.5em">)</m:mo></m:mrow><m:annotation-xml id="id59208" encoding="MathML-Content"><m:minus id="id59211"/></m:annotation-xml><m:annotation id="id59212" encoding="application/x-tex">\displaystyle-\displaystyle\frac{1}{4\pi^{3}}ab\sum _{{n=1}}^{{\infty}}\displaystyle\frac{1}{n}{\Big[}\coth(\displaystyle\frac{n\pi b}{a}){\Big(}{\rm ci}(\displaystyle\frac{n\pi m^{2}}{a})\cos(\displaystyle\frac{n\pi m^{2}}{a})+{\rm si}(\displaystyle\frac{n\pi m^{2}}{a})\sin(\displaystyle\frac{n\pi m^{2}}{a}){\Big)}</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id57672"><h4>Hit id57672</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 443</li>
+ <li>Reference to collection: _PREFIX_/9/f003223.xhtml#id57672</li>
+</ul><blockcode linenumbers="off" title="justification">
+found all required tokens in TeX $\displaystyle-\displaystyle\frac{1}{4\pi^{3}}ab\sum _{{n=1}}^{{\infty}}\displaystyle\frac{1}{n}{\Big[}\coth(\displaystyle\frac{n\pi b}{a}){\Big(}{\rm ci}(\displaystyle\frac{n\pi m^{2}}{a})\cos(\displaystyle\frac{n\pi m^{2}}{a})+{\rm si}(\displaystyle\frac{n\pi m^{2}}{a})\sin(\displaystyle\frac{n\pi m^{2}}{a}){\Big)}$ at pos:64558(48%)
+	Scoringfunction: ' + TeX_HIT_SCORE + 1.984375 * WORD_SCORE[series]  + 1.96875 * WORD_SCORE[ convergent]  + 1.9921875 * TOKEN_SCORE[n]  + 1.5 * TOKEN_SCORE[sum]  + 1.984375 * TOKEN_SCORE[(]  + 1.984375 * TOKEN_SCORE[)]  + 1.5 * TOKEN_SCORE[infty]  + 1.9921875 * TOKEN_SCORE[frac]  + 1.875 * TOKEN_SCORE[1]  + 1.5 * TOKEN_SCORE[sin]  + 1.9999999995343387 * TOKEN_SCORE[\]  + 1.5 * TOKEN_SCORE[_]  + 1.984375 * TOKEN_SCORE[^]  + 1.5 * TOKEN_SCORE[=] 
+			=+100.0+1.984375*13.2791113129629+1.96875*155.947852800104+1.9921875*0.06672875812593+1.5*0.450727438769192+1.984375*0.00418257496311516+1.984375*0.00417601612706465+1.5*0.382802832581921+1.9921875*0.0366287198730455+1.875*0.0102451205633244+1.5*2.85818152377079+1.9999999995343387*5.92879328325965E-4+1.5*0.00257082788077282+1.984375*0.00338742677192689+1.5*2.678806489 = 443.1823167194782'
+	final score ~ 443
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id57672" alttext="\displaystyle-\displaystyle\frac{1}{4\pi^{3}}ab\sum _{{n=1}}^{{\infty}}\displaystyle\frac{1}{n}{\Big[}\coth(\displaystyle\frac{n\pi b}{a}){\Big(}{\rm ci}(\displaystyle\frac{n\pi m^{2}}{a})\cos(\displaystyle\frac{n\pi m^{2}}{a})+{\rm si}(\displaystyle\frac{n\pi m^{2}}{a})\sin(\displaystyle\frac{n\pi m^{2}}{a}){\Big)}" display="inline"><m:semantics id="id57680"><m:mrow id="id57682"><m:mo id="id57683">-</m:mo><m:mstyle id="id57685" displaystyle="true"><m:mfrac id="id57688"><m:mn id="id57689">1</m:mn><m:mrow id="id57691"><m:mn id="id57692">4</m:mn><m:mo id="id57694">⁢</m:mo><m:msup id="id57697"><m:mi id="id57698">π</m:mi><m:mn id="id57700">3</m:mn></m:msup></m:mrow></m:mfrac></m:mstyle><m:mi id="id57702">a</m:mi><m:mi id="id57705">b</m:mi><m:mover id="id57707"><m:munder id="id57708"><m:mo id="id57709" movablelimits="false">∑</m:mo><m:mrow id="id57714"><m:mi id="id57715">n</m:mi><m:mo id="id57717" movablelimits="false">=</m:mo><m:mn id="id57721">1</m:mn></m:mrow></m:munder><m:mi id="id57723" mathvariant="normal">∞</m:mi></m:mover><m:mstyle id="id57728" displaystyle="true"><m:mfrac id="id57731"><m:mn id="id57732">1</m:mn><m:mi id="id57734">n</m:mi></m:mfrac></m:mstyle><m:mo id="id57737" mathsize="1.5em">[</m:mo><m:mi id="id57741">coth</m:mi><m:mo id="id57744">(</m:mo><m:mstyle id="id57746" displaystyle="true"><m:mfrac id="id57749"><m:mrow id="id57750"><m:mi id="id57751">n</m:mi><m:mo id="id57754">⁢</m:mo><m:mi id="id57756">π</m:mi><m:mo id="id57758">⁢</m:mo><m:mi id="id57761">b</m:mi></m:mrow><m:mi id="id57763">a</m:mi></m:mfrac></m:mstyle><m:mo id="id57765">)</m:mo><m:mo id="id57767" mathsize="1.5em">(</m:mo><m:mi id="id57772">ci</m:mi><m:mo id="id57774">(</m:mo><m:mstyle id="id57776" displaystyle="true"><m:mfrac id="id57779"><m:mrow id="id57780"><m:mi id="id57781">n</m:mi><m:mo id="id57783">⁢</m:mo><m:mi id="id57786">π</m:mi><m:mo id="id57788">⁢</m:mo><m:msup id="id57791"><m:mi id="id57792">m</m:mi><m:mn id="id57794">2</m:mn></m:msup></m:mrow><m:mi id="id57796">a</m:mi></m:mfrac></m:mstyle><m:mo id="id57798">)</m:mo><m:mi id="id57800">cos</m:mi><m:mo id="id57802">(</m:mo><m:mstyle id="id57804" displaystyle="true"><m:mfrac id="id57808"><m:mrow id="id57809"><m:mi id="id57810">n</m:mi><m:mo id="id57812">⁢</m:mo><m:mi id="id57814">π</m:mi><m:mo id="id57817">⁢</m:mo><m:msup id="id57819"><m:mi id="id57820">m</m:mi><m:mn id="id57822">2</m:mn></m:msup></m:mrow><m:mi id="id57825">a</m:mi></m:mfrac></m:mstyle><m:mo id="id57827">)</m:mo><m:mo id="id57829">+</m:mo><m:mi id="id57831">si</m:mi><m:mo id="id57833">(</m:mo><m:mstyle id="id57835" displaystyle="true"><m:mfrac id="id57839"><m:mrow id="id57840"><m:mi id="id57841">n</m:mi><m:mo id="id57843">⁢</m:mo><m:mi id="id57845">π</m:mi><m:mo id="id57848">⁢</m:mo><m:msup id="id57850"><m:mi id="id57851">m</m:mi><m:mn id="id57853">2</m:mn></m:msup></m:mrow><m:mi id="id57855">a</m:mi></m:mfrac></m:mstyle><m:mo id="id57858">)</m:mo><m:mi id="id57860">sin</m:mi><m:mo id="id57862">(</m:mo><m:mstyle id="id57864" displaystyle="true"><m:mfrac id="id57867"><m:mrow id="id57868"><m:mi id="id57869">n</m:mi><m:mo id="id57872">⁢</m:mo><m:mi id="id57874">π</m:mi><m:mo id="id57876">⁢</m:mo><m:msup id="id57879"><m:mi id="id57880">m</m:mi><m:mn id="id57882">2</m:mn></m:msup></m:mrow><m:mi id="id57884">a</m:mi></m:mfrac></m:mstyle><m:mo id="id57886">)</m:mo><m:mo id="id57888" mathsize="1.5em">)</m:mo></m:mrow><m:annotation-xml id="id57893" encoding="MathML-Content"><m:minus id="id57896"/></m:annotation-xml><m:annotation id="id57897" encoding="application/x-tex">\displaystyle-\displaystyle\frac{1}{4\pi^{3}}ab\sum _{{n=1}}^{{\infty}}\displaystyle\frac{1}{n}{\Big[}\coth(\displaystyle\frac{n\pi b}{a}){\Big(}{\rm ci}(\displaystyle\frac{n\pi m^{2}}{a})\cos(\displaystyle\frac{n\pi m^{2}}{a})+{\rm si}(\displaystyle\frac{n\pi m^{2}}{a})\sin(\displaystyle\frac{n\pi m^{2}}{a}){\Big)}</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="id68759"><h4>Hit id68759</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/4/f001399.xhtml#id68759</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:232126(000090%)
+	VariableMap:[a x 3, n x 2, ( x 2, ) x 2, infty, -, frac x 2, 2 x 2, 1 x 2, sin, \ x 7, _, ^ x 3, pi x 2, = x 2, prod]
+	Expects 3 occurences for 'n' but has only 2
+	Expects 1 occurences for 'sum' but has only 0
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<m:math id="id68759" alttext="\prod _{{n=1}}^{{\infty}}(1-\frac{a^{2}}{n^{2}})=\frac{\sin(\pi a)}{\pi a}" display="inline"><m:semantics id="id68765"><m:mrow id="id68766"><m:mrow id="id68768"><m:msubsup id="id68769"><m:mo id="id68770">∏</m:mo><m:mrow id="id68772"><m:mi id="id68773">n</m:mi><m:mo id="id68775">=</m:mo><m:mn id="id68777">1</m:mn></m:mrow><m:mi id="id68780" mathvariant="normal">∞</m:mi></m:msubsup><m:mfenced id="id68784" open="(" close=")"><m:mrow id="id68789"><m:mn id="id68790">1</m:mn><m:mo id="id68792">-</m:mo><m:mfrac id="id68795"><m:msup id="id68796"><m:mi id="id68797">a</m:mi><m:mn id="id68799">2</m:mn></m:msup><m:msup id="id68801"><m:mi id="id68802">n</m:mi><m:mn id="id68804">2</m:mn></m:msup></m:mfrac></m:mrow></m:mfenced></m:mrow><m:mo id="id68806">=</m:mo><m:mfrac id="id68808"><m:mrow id="id68810"><m:mi id="id68811">sin</m:mi><m:mo id="id68813">⁡</m:mo><m:mfenced id="id68816" open="(" close=")"><m:mrow id="id68821"><m:mi id="id68822">π</m:mi><m:mo id="id68824">⁢</m:mo><m:mi id="id68826">a</m:mi></m:mrow></m:mfenced></m:mrow><m:mrow id="id68829"><m:mi id="id68830">π</m:mi><m:mo id="id68832">⁢</m:mo><m:mi id="id68834">a</m:mi></m:mrow></m:mfrac></m:mrow><m:annotation-xml id="id68837" encoding="MathML-Content"><m:apply id="id68840"><m:eq id="id68841"/><m:apply id="id68842"><m:apply id="id68843"><m:csymbol id="id68844" cd="ambiguous">superscript</m:csymbol><m:apply id="id68849"><m:csymbol id="id68850" cd="ambiguous">subscript</m:csymbol><m:ci id="id68855">∏</m:ci><m:apply id="id68857"><m:eq id="id68858"/><m:ci id="id68859">n</m:ci><m:cn id="id68861" type="integer">1</m:cn></m:apply></m:apply><m:infinity id="id68866"/></m:apply><m:apply id="id68867"><m:minus id="id68868"/><m:cn id="id68869" type="integer">1</m:cn><m:apply id="id68873"><m:divide id="id68874"/><m:apply id="id68875"><m:csymbol id="id68876" cd="ambiguous">superscript</m:csymbol><m:ci id="id68881">a</m:ci><m:cn id="id68883" type="integer">2</m:cn></m:apply><m:apply id="id68888"><m:csymbol id="id68889" cd="ambiguous">superscript</m:csymbol><m:ci id="id68893">n</m:ci><m:cn id="id68896" type="integer">2</m:cn></m:apply></m:apply></m:apply></m:apply><m:apply id="id68900"><m:divide id="id68901"/><m:apply id="id68902"><m:sin id="id68903"/><m:apply id="id68904"><m:times id="id68905"/><m:ci id="id68906">π</m:ci><m:ci id="id68909">a</m:ci></m:apply></m:apply><m:apply id="id68911"><m:times id="id68912"/><m:ci id="id68913">π</m:ci><m:ci id="id68915">a</m:ci></m:apply></m:apply></m:apply></m:annotation-xml><m:annotation id="id68918" encoding="application/x-tex">\prod _{{n=1}}^{{\infty}}(1-\frac{a^{2}}{n^{2}})=\frac{\sin(\pi a)}{\pi a}</m:annotation></m:semantics></m:math>
+
+<br /> End of MathML <br />
+.</div><div id="idp939504"><h4>Hit idp939504</h4>
+<ul>
+ <li>Reviwer: smiao</li>
+ <li>Reviwer score: 0</li>
+ <li>Formulasearchengine score: 0</li>
+ <li>Reference to collection: _PREFIX_/201/f080019.xhtml#idp939504</li>
+</ul><blockcode linenumbers="off" title="justification">
+no match at pos:112914(000038%)
+	VariableMap:[E, tilde, ns, A, L, sum, infty, nx, W, S, \ x 7, _ x 2, ^ x 2, n, (, ), ., ,, frac, 2, 1, displaystyle, sin, pi, =]
+	Expects 3 occurences for 'n' but has only 1
+	Scoringfunction: ' + NO_SCORE
+			=+0.0 = 0.0'
+	final score ~ 0
+reviewer: smiao gave 0</blockcode><br /> Rendered MathML: <br />
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" id="idp939504" alttext="\displaystyle\sum _{{n=1}}^{{\infty}}\tilde{W}^{{S,A}}_{{ns}}(E)\sin\frac{2\pi nx}{L}." display="inline"><semantics id="idp940224"><mrow id="idp940352"><mrow id="idp940480"><mover id="idp940608"><munder id="idp940736"><mo id="idp940864" movablelimits="false">∑</mo><mrow id="idp941360"><mi id="idp941488">n</mi><mo id="idp941744" movablelimits="false">=</mo><mn id="idp942272">1</mn></mrow></munder><mi id="idp942528" mathvariant="normal">∞</mi></mover><msubsup id="idp943088"><mover id="idp943216" accent="true"><mi id="idp943616">W</mi><mo id="idp943872">~</mo></mover><mrow id="idp944128"><mi id="idp944256">n</mi><mo id="idp944512">⁢</mo><mi id="idp944800">s</mi></mrow><mrow id="idp945056"><mi id="idp945184">S</mi><mo id="idp945440">,</mo><mi id="idp945696">A</mi></mrow></msubsup><mo id="idp945952">⁢</mo><mfenced id="idp946240" open="(" close=")"><mi id="idp946848">E</mi></mfenced><mo id="idp947104">⁢</mo><mrow id="idp947392"><mi id="idp947520">sin</mi><mo id="idp947776">⁡</mo><mstyle id="idp948064" displaystyle="true"><mfrac id="idp948464"><mrow id="idp948592"><mn id="idp948720">2</mn><mo id="idp948976">⁢</mo><mi id="idp949264">π</mi><mo id="idp949552">⁢</mo><mi id="idp949840">n</mi><mo id="idp950096">⁢</mo><mi id="idp950384">x</mi></mrow><mi id="idp950640">L</mi></mfrac></mstyle></mrow></mrow><mo id="idp950896">.</mo></mrow><annotation-xml id="idp951152" encoding="MathML-Content"><apply id="idp951552"><apply id="idp951680"><csymbol id="idp951808" cd="ambiguous">superscript</csymbol><apply id="idp952368"><csymbol id="idp952496" cd="ambiguous">subscript</csymbol><sum id="idp953056"/><apply id="idp953184"><eq id="idp953312"/><ci id="idp953440">n</ci><cn id="idp953696" type="integer">1</cn></apply></apply><infinity id="idp954224"/></apply><apply id="idp954352"><times id="idp954480"/><apply id="idp954608"><csymbol id="idp954736" cd="ambiguous">subscript</csymbol><apply id="idp955296"><csymbol id="idp955424" cd="ambiguous">superscript</csymbol><apply id="idp955984"><ci id="idp956112">~</ci><ci id="idp956368">W</ci></apply><apply id="idp956624"><list id="idp956752"/><ci id="idp956880">S</ci><ci id="idp957136">A</ci></apply></apply><apply id="idp957392"><times id="idp957520"/><ci id="idp957648">n</ci><ci id="idp957904">s</ci></apply></apply><ci id="idp958160">E</ci><apply id="idp958416"><sin id="idp958544"/><apply id="idp958672"><divide id="idp958800"/><apply id="idp958928"><times id="idp959056"/><cn id="idp959184" type="integer">2</cn><ci id="idp959712">π</ci><ci id="idp960000">n</ci><ci id="idp960256">x</ci></apply><ci id="idp960512">L</ci></apply></apply></apply></apply></annotation-xml><annotation id="idp960768" encoding="application/x-tex">\displaystyle\sum _{{n=1}}^{{\infty}}\tilde{W}^{{S,A}}_{{ns}}(E)\sin\frac{2\pi nx}{L}.</annotation></semantics></math>
+
+<br /> End of MathML <br />
+.</div></div></div></div>    </div>
+
+          <nav class="clearfix"><ul class="links"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/178%23comment-form">Log in</a> to post comments</span></li></ul></nav>
+    
+    
+    
+  </div>
+</article>
+
+  </div></div>
+
+        </section>
+
+        
+      </div></div>
+
+            
+    </div></div>
+
+    
+  </div></div>
+
+  
+  <div id="page-footer">
+          <div id="footer-panels-wrapper"><div class="container clearfix">
+        <div class="four-4x25 gpanel clearfix">
+                                        <div class="region region-four-fourth"><div class="region-inner clearfix"><div id="block-block-1" class="block block-block no-title odd first last block-count-3 block-region-four-fourth block-1" ><div class="block-inner clearfix">  
+  
+  <div class="block-content content no-title"><p>By <a href="mailto:info@formulasearchengine.com">Moritz Schubotz</a>, Berlin 2012 (<a href="https://plus.google.com/u/0/104541687836095789339?&lt;br /&gt;&#10;   rel=author">g+</a>)</p>
+</div>
+  </div></div></div></div>        </div>
+      </div></div>
+    
+          <div id="footer-wrapper"><div class="container clearfix">
+        <footer class="clearfix">
+          <div class="region region-footer"><div class="region-inner clearfix"><nav id="block-superfish-2" class="block block-superfish no-title odd first last block-count-4 block-region-footer block-2" ><div class="block-inner clearfix">  
+  
+  <div class="block-content content clearfix no-title"><ul id="superfish-2" class="menu sf-menu sf-menu-administration sf-horizontal sf-style-none sf-total-items-1 sf-parent-items-0 sf-single-items-1"><li id="menu-450-2" class="firstandlast odd sf-item-1 sf-depth-1 sf-no-children"><a href="/Impressum" title="Legeal notices" class="sf-depth-1">Impressum</a></li></ul></div>
+  </div></nav></div></div>        </footer>
+     </div></div>
+      </div>
+
+</div></div>
+  </body>
+</html>
