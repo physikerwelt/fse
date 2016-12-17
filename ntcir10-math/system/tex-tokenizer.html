@@ -116,41 +116,40 @@ body.btf-gwf-open-sans .block-title{font-family:'Open Sans'}
 It is also used to transofrm TeXQuers as e.g. <a href="/ntcir10-math/results/FT/NTCIR10-FT-14">\sum\qvar{p}_{n}\qvar{a}_{n}</a> to a so called <em>TeX-Filter</em>.
 A similar function transform Presentation MathML to a multiset of Presentation MathML tokens. (see <a href="/ntcir10-math/system/presentation-mathml-tokenizer">PMML-Tokenizer</a>) 
 
-<java>
-import java.util.StringTokenizer;
-
-import org.apache.commons.lang.StringEscapeUtils;
-
-import com.google.common.collect.HashMultiset;
-import com.google.common.collect.Multiset;
-
-
-public final class classname {
-	private static final String TEX_SEPERATORS = "\\()[]+-*:1234567890,; |\t=_^*/.~!<>&\"";
-	/**
-	 * Creates a multiset of tokens extracted from a TeX input String.
-	 * If the input contains HTML-entities (e.g &lt;) they are converted to the corresponding
-	 * characters (e.g. <). The sTeX command \qvar is ignored.
-	 *
-	 * @param tex the TeX input
-	 * @return the Multiset of the tokens
-	 */
-	public static Multiset<String> TeX2TokenBag(final String tex) {
-		Multiset<String> out = HashMultiset.create();
-		String newtex = StringEscapeUtils.unescapeHtml(tex);
-		newtex = newtex.replaceAll("\\\\qvar\\{(.*?)\\}", ""); //remove qvar
-		newtex = newtex.replace("{", " ");//ignore curly braces
-		newtex = newtex.replace("}", " ");
-		StringTokenizer tok = new StringTokenizer(newtex,TEX_SEPERATORS, true);
-		while (tok.hasMoreTokens()) {
-			out.add(tok.nextToken());
-		}
-		//Remove spaces sequence
-		out.remove(" ", Integer.MAX_VALUE);
-		return out;
-	}
-}
-</java></div></div></div><section class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above view-mode-full view-mode-full"><h2 class="field-label">Tags:&nbsp;</h2><ul class="field-items"><li class="field-item even" rel="dc:subject"><a href="/taxonomy/term/28" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">TeX</a></li><li class="field-item odd" rel="dc:subject"><a href="/taxonomy/term/29" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Java</a></li><li class="field-item even" rel="dc:subject"><a href="/taxonomy/term/30" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Tokenizer</a></li><li class="field-item odd" rel="dc:subject"><a href="/taxonomy/term/31" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">NTCIR System</a></li><li class="field-item even" rel="dc:subject"><a href="/taxonomy/term/32" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">TeX-Filter</a></li></ul></section>    </div>
+<pre>
+<a name="l1"><span class="ln">1    </span></a><span class="s0">import </span><span class="s1">java.util.StringTokenizer</span><span class="s0">;</span><span class="s1"> 
+<a name="l2"><span class="ln">2    </span></a> 
+<a name="l3"><span class="ln">3    </span></a></span><span class="s0">import </span><span class="s1">org.apache.commons.lang.StringEscapeUtils</span><span class="s0">;</span><span class="s1"> 
+<a name="l4"><span class="ln">4    </span></a></span><span class="s0">import </span><span class="s1">com.google.common.collect.HashMultiset</span><span class="s0">;</span><span class="s1"> 
+<a name="l5"><span class="ln">5    </span></a></span><span class="s0">import </span><span class="s1">com.google.common.collect.Multiset</span><span class="s0">;</span><span class="s1"> 
+<a name="l6"><span class="ln">6    </span></a> 
+<a name="l7"><span class="ln">7    </span></a></span><span class="s0">public final class </span><span class="s1">classname { 
+<a name="l8"><span class="ln">8    </span></a>    </span><span class="s0">private static final </span><span class="s1">String TEX_SEPERATORS = </span><span class="s2">&quot;</span><span class="s0">\\</span><span class="s2">()[]+-*:1234567890,; |</span><span class="s0">\t</span><span class="s2">=_^*/.~!&lt;&gt;&amp;</span><span class="s0">\&quot;</span><span class="s2">&quot;</span><span class="s0">;</span><span class="s1"> 
+<a name="l9"><span class="ln">9    </span></a> 
+<a name="l10"><span class="ln">10   </span></a>    </span><span class="s3">/** 
+<a name="l11"><span class="ln">11   </span></a>     * Creates a multiset of tokens extracted from a TeX input String. 
+<a name="l12"><span class="ln">12   </span></a>     * If the input contains HTML-entities (e.g &lt;) they are converted to the corresponding 
+<a name="l13"><span class="ln">13   </span></a>     * characters (e.g. &lt;). The sTeX command \qvar is ignored. 
+<a name="l14"><span class="ln">14   </span></a>     * 
+<a name="l15"><span class="ln">15   </span></a>     * </span><span class="s4">@param </span><span class="s3">tex the TeX input 
+<a name="l16"><span class="ln">16   </span></a>     * </span><span class="s4">@return </span><span class="s3">the Multiset of the tokens 
+<a name="l17"><span class="ln">17   </span></a>     */</span><span class="s1"> 
+<a name="l18"><span class="ln">18   </span></a>    </span><span class="s0">public static </span><span class="s1">Multiset TeX2TokenBag(</span><span class="s0">final </span><span class="s1">String tex) { 
+<a name="l19"><span class="ln">19   </span></a>        Multiset out = HashMultiset.create()</span><span class="s0">;</span><span class="s1"> 
+<a name="l20"><span class="ln">20   </span></a>        String newtex = StringEscapeUtils.unescapeHtml(tex)</span><span class="s0">;</span><span class="s1"> 
+<a name="l21"><span class="ln">21   </span></a>        newtex = newtex.replaceAll(</span><span class="s2">&quot;</span><span class="s0">\\\\</span><span class="s2">qvar</span><span class="s0">\\</span><span class="s2">{(.*?)</span><span class="s0">\\</span><span class="s2">}&quot;</span><span class="s0">, </span><span class="s2">&quot;&quot;</span><span class="s1">)</span><span class="s0">; </span><span class="s5">//remove qvar</span><span class="s1"> 
+<a name="l22"><span class="ln">22   </span></a>        newtex = newtex.replace(</span><span class="s2">&quot;{&quot;</span><span class="s0">, </span><span class="s2">&quot; &quot;</span><span class="s1">)</span><span class="s0">; </span><span class="s5">//ignore curly braces</span><span class="s1"> 
+<a name="l23"><span class="ln">23   </span></a>        newtex = newtex.replace(</span><span class="s2">&quot;}&quot;</span><span class="s0">, </span><span class="s2">&quot; &quot;</span><span class="s1">)</span><span class="s0">;</span><span class="s1"> 
+<a name="l24"><span class="ln">24   </span></a>        StringTokenizer tok = </span><span class="s0">new </span><span class="s1">StringTokenizer(newtex</span><span class="s0">, </span><span class="s1">TEX_SEPERATORS</span><span class="s0">, true</span><span class="s1">)</span><span class="s0">;</span><span class="s1"> 
+<a name="l25"><span class="ln">25   </span></a>        </span><span class="s0">while </span><span class="s1">(tok.hasMoreTokens()) { 
+<a name="l26"><span class="ln">26   </span></a>            out.add(tok.nextToken())</span><span class="s0">;</span><span class="s1"> 
+<a name="l27"><span class="ln">27   </span></a>        } </span><span class="s5">//Remove spaces sequence</span><span class="s1"> 
+<a name="l28"><span class="ln">28   </span></a>        out.remove(</span><span class="s2">&quot; &quot;</span><span class="s0">, </span><span class="s1">Integer.MAX_VALUE)</span><span class="s0">;</span><span class="s1"> 
+<a name="l29"><span class="ln">29   </span></a>        </span><span class="s0">return </span><span class="s1">out</span><span class="s0">;</span><span class="s1"> 
+<a name="l30"><span class="ln">30   </span></a>    } 
+<a name="l31"><span class="ln">31   </span></a>}</span></pre>
+	    
+	    </div></div></div><section class="field field-name-field-tags field-type-taxonomy-term-reference field-label-above view-mode-full view-mode-full"><h2 class="field-label">Tags:&nbsp;</h2><ul class="field-items"><li class="field-item even" rel="dc:subject"><a href="/taxonomy/term/28" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">TeX</a></li><li class="field-item odd" rel="dc:subject"><a href="/taxonomy/term/29" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Java</a></li><li class="field-item even" rel="dc:subject"><a href="/taxonomy/term/30" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Tokenizer</a></li><li class="field-item odd" rel="dc:subject"><a href="/taxonomy/term/31" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">NTCIR System</a></li><li class="field-item even" rel="dc:subject"><a href="/taxonomy/term/32" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">TeX-Filter</a></li></ul></section>    </div>
 
           <nav class="clearfix"><ul class="links"><li class="comment_forbidden first last"><span><a href="/user/login?destination=node/145%23comment-form">Log in</a> to post comments</span></li></ul></nav>
     
